@@ -1,0 +1,20 @@
+.page-title
+{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.page-subtitle
+{
+    font-size: large;
+    font-style: italic;
+    color: gray;
+}
+
+.workout-details {
+    white-space: pre-line;
+}
+
+.workout-details p {
+    margin-bottom: 0.3rem;
+}

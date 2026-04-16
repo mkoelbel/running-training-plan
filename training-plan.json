@@ -1,0 +1,258 @@
+{
+    "advanced": [
+        {
+            "week": 4,
+            "headnote": "Week 4 continues with the same 5-7 days training schedule during which you will try to increase your weekly long run by a mile and add an additional repeat to the hill workout. This is the last week of hill repeats and fartlek runs. New speed workouts will begin next week.",
+            "footnote": "Congratulations! You have just completed your first month of training. Six weeks to go before the Credit Union Cherry Blossom. Remember to stay hydrated before, during, and after your runs, even in cold weather.", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "As your fitness level improves, you may feel that rest days are not as important. Resist this line of thought and enjoy the extra time (or sleep). If you want to stretch on your day off, first go for a walk to warm up your muscles. Never stretch cold muscles. Yoga or Pilates will help increase flexibility."
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Speed workout",
+                    "distance": "",
+                    "workoutOverview": "Hills, 8-10x",
+                    "workoutDetails": "Find a hill 200-400 meters long. \n Warmup: Easy 1 mile \n Hills: Surge up the hill, keeping arms relaxed. Jog down, and repeat. \n Cooldown: Easy 1 mile",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-7",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Intervals, 1-2-3-4-5-6",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace to race pace (not a sprint) for 1 minute, jog 1 minute, pick up the pace for 2 minutes, jog 1 minute, pick up the pace for 3 minutes, jog 1 minute, etc, until you work up to 6 minutes. If you are feeling good, try to run 7 minutes at race pace. \n Cooldown: Easy 1 mile",
+                    "tip": ""
+                },
+                {   
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "Going for a walk or easy bike ride can help work out muscle tightness to prepare for the weekend's hard work.",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Easy recovery",
+                    "distance": "5-8",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Try to stay relaxed while working. Your arms should be relaxed and swinging like a pendulum. Keep your shoulders loose."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "10-13",
+                    "workoutOverview": "",
+                    "workoutDetails": "Increase your weekly long run by 1 mile.",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 5,
+            "headnote": "Week 5 continues with 5-7 days of runing while maintaining the weekly long run. Speed sessions change to anaerobic threshold training, with one day of mile repeats and one day of an anaerobic threshold (tempo) run.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Check your shoes for wear. It might be time to think about getting a new pair of shoes. Many runners have two pairs and alternate running in them. They always have an old pair already broken in and a new pair they are breaking in. Most shoes wear out in the mid-sole after 300-500 miles, even though the bottom of the shoe may not appear worn."
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Intervals, 1 mile / 2 min, 3-4x",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: 1 mile repeats. Your goal is to run a mile at race pace, or 80-85% of your maximum heart rate. Recovery jog for 2-3 minutes between repeats. \n Cooldown: Easy 1 mile \n If you have to stop and walk after the mile, you may be running the workout too fast. This should be a hard but sustainable effort.",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-7",
+                    "workoutOverview": "",
+                    "workoutDetails": "Easy recovery run at 60-70%. You may feel stiff and sore from yesterday's mile repeats. It should become easier next week.",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Speed workout",
+                    "distance": "5-7",
+                    "workoutOverview": "Anaerobic threshold, 20-25 min",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Anaerobic threshold: Run at your current race pace, or at 80-85% of your maximum heart rate, for 20-25 minutes. The effort should be somewhat hard - you should feel like you could keep it up for a long time but if you picked it up very much, you might feel like stopping. \n Cooldown: Easy 1 mile",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Don't worry if your appetite is increasing. Your body needs more fuel because of increased mileage and intensity. You may need more complex carbohydrates, including whole grains and vegetables."
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Easy recovery",
+                    "distance": "5-8",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Remember to stretch after every run."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "10-13",
+                    "workoutOverview": "",
+                    "workoutDetails": "Try 2-3 miles at race pace at the end of the long run to see what the effort feels like. Keep the rest of the run at a conversational pace, 90-120 minutes slower than race pace, or at 60-70%.",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 6,
+            "headnote": "Week 6 continues with 5-7 days of running with a weekly long run and 2 anaerobic threshold speed sessions. 4 more weeks of hard training are ahead.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Intervals, 1 mile / 2 min, 3-4x",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: 1 mile repeats at race pace, or 80-85% or maximum heartrate, with a 2-minute recovery. Your goal for the repeat miles is to run at your anaerobic threshold (15K or 10-mile race pace) with a very short recovery. \n Cooldown: Easy 1 mile \n If at the end of the mile repeat you have to walk, you are probably running the workout too hard.",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-7",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Try to find a course with rolling hills. The hills will make you stronger."
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Anaerobic threshold, 20-25 min",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Anaerobic threshold: Run at your current race pace, or at 80-85% of your maximum heart rate, for 20-25 minutes. You should feel like you could keep going for a long time, but if you picked up the pace you would feel like stopping. \n Cooldown: Easy 1 mile",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "Do not be concerned if you are still feeling tired and sore from the last 2 weeks of hard workouts.",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Easy recovery",
+                    "distance": "5-7",
+                    "workoutOverview": "",
+                    "workoutDetails": "Another easy recovery before Sunday's long run.",
+                    "tip": "Wear sunglasses with UV protection to keep your eyes safe on sunny days."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "10-13",
+                    "workoutOverview": "",
+                    "workoutDetails": "Increase your weekly long run by 1 mile. Keep your run at 60-75% effort. \n If you are racing today, you can still get your long run in by doing a 2-3 mile warm up jog before the race, and a 2-3 mile cool down run after the race (depending on the length of the race).",
+                    "tip": ""
+                }
+            ]
+        }
+    ],
+    "intermediate": [
+        {
+            "week": 4,
+            "headnote": "You are now beginning your fourth week of training. Daily runs continue to increase as does the weekly long run. You should start feeling stronger now and may want to increase the distance of your daily training run.",
+            "footnote": "Congratulations! You have just finished your first month of training. Six weeks to go before the Credit Union Cherry Blossom.", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "As your fitness level improves, you may feel that rest days are not as important. Resist this line of thought and enjoy the extra time (or sleep). If you want to stretch on your day off, first go for a walk to warm up your muscles. Never stretch cold muscles. Yoga or Pilates will help increase flexibility."
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Speed workout",
+                    "distance": "",
+                    "workoutOverview": "Hills, 8-10x",
+                    "workoutDetails": "Find a hill 200-400 meters long. \n Warmup: Easy 1 mile \n Hills: Surge up the hill, keeping arms relaxed. Jog down, and repeat. \n Cooldown: Easy 1 mile",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-7",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Intervals, 1-2-3-4-5-6",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace to race pace (not a sprint) for 1 minute, jog 1 minute, pick up the pace for 2 minutes, jog 1 minute, pick up the pace for 3 minutes, jog 1 minute, etc, until you work up to 6 minutes. If you are feeling good, try to run 7 minutes at race pace. \n Cooldown: Easy 1 mile",
+                    "tip": ""
+                },
+                {   
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "Going for a walk or easy bike ride can help work out muscle tightness to prepare for the weekend's hard work.",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Easy recovery",
+                    "distance": "5-8",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Try to stay relaxed while working. Your arms should be relaxed and swinging like a pendulum. Keep your shoulders loose."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "10-13",
+                    "workoutOverview": "",
+                    "workoutDetails": "Increase your weekly long run by 1 mile.",
+                    "tip": ""
+                }
+            ]
+        }
+    ]
+}
