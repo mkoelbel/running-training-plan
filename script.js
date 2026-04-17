@@ -1,3 +1,5 @@
+import { getISOWeek } from "https://cdn.jsdelivr.net/npm/date-fns@3/+esm";
+
 // Can check console to ensure this JS script is loaded
 console.log("my JS script loaded");
 
@@ -7,8 +9,13 @@ fetch("training-plan.json")
         // Check console to ensure JSON file is loaded
         console.log(`data: ${data}`);
 
-        // Get HTML sections and templates for the page
-        var levelInput = document.getElementById("training-plan-level-input");
+        // Get user input defaults from JSON
+        const levelDefault = data.levelDefault;
+        const startDateDefault = data.startDateDefault;
+
+        // Get HTML sections (user inputs, containers, templates, etc) for the page
+        const levelInput = document.getElementById("level-input");
+        const startDateInput = document.getElementById("start-date-input");
         const levelHTML = document.querySelector(".level-subtitle");
         const planContainer = document.getElementById("training-plan-container");
         const weekTemplate = document.getElementById("week-template");
@@ -20,31 +27,45 @@ fetch("training-plan.json")
             return;
         }
 
-        // Determine which level training plan to display
-        var levelSelected = levelInput.value;
+        // Populate user inputs with defaults from JSON
+        levelInput.value = levelDefault;
+        startDateInput.value = startDateDefault;
 
-        // Render training plan for the selected level
-        renderPlan(levelSelected);
+        // Render training plan for the selected level and week
+        const weekNum = calculateCurrentWeekNum(startDateInput.value);
+        renderPlan(levelInput.value, weekNum);
 
-        // On user input change, re-render the training plan
+        // On changing the level input, re-render the training plan
         levelInput.addEventListener("change", function () {
-            renderPlan(this.value);
+            const weekNum = calculateCurrentWeekNum(startDateInput.value);
+            renderPlan(this.value, weekNum);
         });
+
+        // On changing the start date input, re-calculate the current week number and re-render the training plan
+        startDateInput.addEventListener("change", function() {
+            const weekNum = calculateCurrentWeekNum(this.value);
+            renderPlan(levelInput.value, weekNum);
+        })
 
         // Functions:
         // Build the HTML for the page
-        function renderPlan(level) {
+        function renderPlan(level, weekNumToExpand) {
             // 0. First, clear the container
             planContainer.innerHTML = "";
 
             // Get the correct section of the JSON
             const plan = data[level];
+            if (!plan) {
+                console.error("Plan not found for level:", level);
+                return;
+            }
 
-            // 1. Populate HTML sections for the page
+            // 1. Populate some HTML sections for the page
             levelHTML.textContent = level.toUpperCase();
 
             // 2. Populate HTML for the training plan container
             // Loop through JSON weeks, build the week's HTML, and add it to the plan container
+            let i = 1; // Keep track of weeks we're building so we know which week to expand
             plan.forEach(week => {
                 // Create a node for the current week
                 const weekNode = weekTemplate.content.cloneNode(true);
@@ -100,8 +121,22 @@ fetch("training-plan.json")
                     daysContainer.appendChild(dayNode);
                 });
 
+                // If it's the week to expand, do that
+                if (i == weekNumToExpand) {
+                    weekNode.querySelector("details").open = true;
+                }
+
                 // Add the week node to the plan container
-                planContainer.appendChild(weekNode);                
+                planContainer.appendChild(weekNode);
+
+                i++;
             });
+        }
+
+        function calculateCurrentWeekNum(startDate) {
+            const startWeekNum = getISOWeek(new Date(startDate));
+            const currentWeekNum = getISOWeek(new Date());
+            const weekNumToDisplay = currentWeekNum - startWeekNum + 1; // Use 1-based indexing
+            return weekNumToDisplay;
         }
     });

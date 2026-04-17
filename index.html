@@ -14,11 +14,14 @@
 <body>
     <!-- Content -->
     <div class="container m-2 me-4">
-        <select id="training-plan-level-input" class="mb-3">
+        <select id="level-input" class="mb-3 me-3">
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
             <option value="advanced" selected>Advanced</option>
         </select>
+
+        <label for="start-date-input">Start date:</label>
+        <input type="date" id="start-date-input">
 
         <div class="page-title">Training Plan</div>
         <div class="page-subtitle">Cherry Blossom 10-Mile Training Plan</div>
@@ -28,7 +31,7 @@
 
     <!-- Week template -->
     <template id="week-template">
-        <details class="card mb-3" open>
+        <details class="card mb-3">
             <summary class="card-header fw-bold">
                 Week <span class="week-number"></span>
             </summary>
@@ -62,6 +65,6 @@
     </template>
 
     <!-- JS scripts -->
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
