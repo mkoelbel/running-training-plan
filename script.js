@@ -5,13 +5,9 @@ console.log("my JS script loaded");
 
 fetch("training-plan.json")
     .then(response => response.json())
-    .then(data => {
+    .then(json => {
         // Check console to ensure JSON file is loaded
-        console.log(`data: ${data}`);
-
-        // Get user input defaults from JSON
-        const levelDefault = data.levelDefault;
-        const startDateDefault = data.startDateDefault;
+        console.log(`data: ${json}`);
 
         // Get HTML sections (user inputs, containers, templates, etc) for the page
         const levelInput = document.getElementById("level-input");
@@ -28,10 +24,10 @@ fetch("training-plan.json")
         }
 
         // Populate user inputs with defaults from JSON
-        levelInput.value = levelDefault;
-        startDateInput.value = startDateDefault;
+        levelInput.value = json.levelDefault;
+        startDateInput.value = json.startDateDefault;
 
-        // Render training plan for the selected level and week
+        // Render training plan for the selected level
         const weekNum = calculateCurrentWeekNum(startDateInput.value);
         renderPlan(levelInput.value, weekNum);
 
@@ -48,91 +44,106 @@ fetch("training-plan.json")
         })
 
         // Functions:
-        // Build the HTML for the page
+        // Build the HTML for the training plan
         function renderPlan(level, weekNumToExpand) {
-            // 0. First, clear the container
+            // Clear the container
             planContainer.innerHTML = "";
 
-            // Get the correct section of the JSON
-            const plan = data[level];
-            if (!plan) {
+            // Get the JSON section for the given level
+            const planJson = json[level];
+            if (!planJson) {
                 console.error("Plan not found for level:", level);
                 return;
             }
 
-            // 1. Populate some HTML sections for the page
+            // Populate some HTML sections for the page
             levelHTML.textContent = level.toUpperCase();
 
-            // 2. Populate HTML for the training plan container
-            // Loop through JSON weeks, build the week's HTML, and add it to the plan container
+            // Populate HTML for the training plan container
             let i = 1; // Keep track of weeks we're building so we know which week to expand
-            plan.forEach(week => {
-                // Create a node for the current week
-                const weekNode = weekTemplate.content.cloneNode(true);
-
-                // Get HTML sections for the week template
-                const weekNumberHTML = weekNode.querySelector(".week-number");
-                const headnoteHTML = weekNode.querySelector(".headnote");
-                const footnoteHTML = weekNode.querySelector(".footnote");
-                const daysContainer = weekNode.querySelector(".days");
-
-                // Populate HTML sections
-                weekNumberHTML.textContent = week.week;
-                headnoteHTML.textContent = week.headnote;
-                footnoteHTML.textContent = week.footnote;
-
-                // Populate HTML for the days container
-                // Loop through JSON days, build the day's HTML, and add it to the days container
-                week.days.forEach(day => {
-                    // Create a node for the current day
-                    const dayNode = dayTemplate.content.cloneNode(true);
-
-                    // Get HTML sections for the day template
-                    const dayNameHTML = dayNode.querySelector(".day-name");
-                    const workoutTypeHTML = dayNode.querySelector(".workout-type");
-                    const distanceHTML = dayNode.querySelector(".distance");
-                    const workoutOverviewHTML = dayNode.querySelector(".workout-overview");
-                    const workoutDetailsHTML = dayNode.querySelector(".workout-details");
-                    const tipHTML = dayNode.querySelector(".tip");
-                    const tipTextHTML = tipHTML.querySelector(".tip-text");
-
-                    // Get some variables
-                    const hasDistance = day.distance && parseFloat(day.distance) > 0;
-                    const hasTip = day.tip && day.tip.trim() !== "";
-                    const hasWorkoutDetails = day.workoutDetails && day.workoutDetails.trim() !== "";
-                    const workoutDetailsFormatted = day.workoutDetails
-                        .split("\n")
-                        .map(p => `<p>${p.trim()}</p>`)
-                        .join("");
-
-                    // Populate HTML sections
-                    dayNameHTML.textContent = day.day;
-                    workoutTypeHTML.textContent = day.workoutType;
-                    if (hasDistance) distanceHTML.textContent = ` (${day.distance} miles)`;
-                    workoutOverviewHTML.textContent = day.workoutOverview;
-                    if (hasWorkoutDetails) workoutDetailsHTML.innerHTML = workoutDetailsFormatted;
-                    if (hasTip) {
-                        tipTextHTML.textContent = day.tip;
-                    } else {
-                        tipHTML.classList.add("d-none");
-                    }
-
-                    // Add the day node to the days container
-                    daysContainer.appendChild(dayNode);
-                });
-
+            planJson.forEach(weekJson => {
+                // Build the week HTML node
+                const weekNode = renderWeek(weekJson)
                 // If it's the week to expand, do that
                 if (i == weekNumToExpand) {
                     weekNode.querySelector("details").open = true;
                 }
-
                 // Add the week node to the plan container
                 planContainer.appendChild(weekNode);
-
                 i++;
             });
         }
 
+        // Build the HTML for a week
+        function renderWeek(json) {
+            // Create an HTML node for the current week
+            const node = weekTemplate.content.cloneNode(true);
+
+            // Get sections for the HTML template
+            const weekNumberHTML = node.querySelector(".week-number");
+            const headnoteHTML = node.querySelector(".headnote");
+            const footnoteHTML = node.querySelector(".footnote");
+            const daysContainer = node.querySelector(".days");
+
+            // Populate HTML sections
+            weekNumberHTML.textContent = json.week;
+            headnoteHTML.textContent = json.headnote;
+            footnoteHTML.textContent = json.footnote;
+
+            // Populate HTML for the days container
+            json.days.forEach(dayJson => {
+                // Build the day HTML node
+                const dayNode = renderDay(dayJson);
+                // Add it to the days container
+                daysContainer.appendChild(dayNode);
+            });
+            
+            // Return populated node
+            return node;
+        }
+
+        // Build the HTML for a day, given JSON data and an HTML template
+        function renderDay(json) {
+            // Create an HTML node for the current day
+            const node = dayTemplate.content.cloneNode(true);
+
+            // Get sections for the HTML template
+            const dayNameHTML = node.querySelector(".day-name");
+            const workoutTypeHTML = node.querySelector(".workout-type");
+            const distanceHTML = node.querySelector(".distance");
+            const workoutOverviewHTML = node.querySelector(".workout-overview");
+            const workoutDetailsHTML = node.querySelector(".workout-details");
+            const tipHTML = node.querySelector(".tip");
+            const tipTextHTML = tipHTML.querySelector(".tip-text");
+
+            // Get some variables
+            const hasDistance = json.distance && parseFloat(json.distance) > 0;
+            const hasTip = json.tip && json.tip.trim() !== "";
+            const hasWorkoutDetails = json.workoutDetails && json.workoutDetails.trim() !== "";
+            const workoutDetailsFormatted = json.workoutDetails
+                .split("\n")
+                .map(p => `<p>${p.trim()}</p>`)
+                .join("");
+
+            // Populate HTML sections
+            dayNameHTML.textContent = json.day;
+            workoutTypeHTML.textContent = json.workoutType;
+            if (hasDistance) distanceHTML.textContent = ` (${json.distance} miles)`;
+            workoutOverviewHTML.textContent = json.workoutOverview;
+            if (hasWorkoutDetails) workoutDetailsHTML.innerHTML = workoutDetailsFormatted;
+            if (hasTip) {
+                tipTextHTML.textContent = json.tip;
+            } else {
+                tipHTML.classList.add("d-none");
+            }
+
+            // Return populated node
+            return node;
+        }
+
+        // Given a start date, calculate the current week number (week differential using 1-based indexing)
+        // (e.g. if today is in the same week as the start date, return 1. If it's the
+        // week after the week of the start date, return 2.)
         function calculateCurrentWeekNum(startDate) {
             const startWeekNum = getISOWeek(new Date(startDate));
             const currentWeekNum = getISOWeek(new Date());
