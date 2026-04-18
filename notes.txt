@@ -1,5 +1,4 @@
 TODO
-- Refactor renderPlan method so it's more functionalized (chat gpt's suggestion)
 - Add more weeks to JSON
 
 
