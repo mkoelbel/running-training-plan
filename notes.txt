@@ -4,66 +4,66 @@ TODO
 
 
 JSON for adding a week
-    {
-        "week": 5,
-        "headnote": "",
-        "footnote": "", 
-        "days": [
-            {
-                "day": "Monday",
-                "workoutType": "Rest day",
-                "distance": "",
-                "workoutOverview": "",
-                "workoutDetails": "",
-                "tip": ""
-            },
-            {
-                "day": "Tuesday",
-                "workoutType": "",
-                "distance": "",
-                "workoutOverview": "",
-                "workoutDetails": "",
-                "tip": ""
-            },
-            {
-                "day": "Wednesday",
-                "workoutType": "",
-                "distance": "",
-                "workoutOverview": "",
-                "workoutDetails": "",
-                "tip": ""
-            },
-            {
-                "day": "Thursday",
-                "workoutType": "",
-                "distance": "",
-                "workoutOverview": "",
-                "workoutDetails": "",
-                "tip": ""
-            },
-            {
-                "day": "Friday",
-                "workoutType": "",
-                "distance": "",
-                "workoutOverview": "",
-                "workoutDetails": "",
-                "tip": ""
-            },
-            {
-                "day": "Saturday",
-                "workoutType": "",
-                "distance": "",
-                "workoutOverview": "",
-                "workoutDetails": "",
-                "tip": ""
-            },
-            {
-                "day": "Sunday",
-                "workoutType": "",
-                "distance": "",
-                "workoutOverview": "",
-                "workoutDetails": "",
-                "tip": ""
-            }
-        ]
-    }
+        {
+            "week": 5,
+            "headnote": "",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                }
+            ]
+        }

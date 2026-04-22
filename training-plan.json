@@ -67,7 +67,7 @@
         },
         {
             "week": 5,
-            "headnote": "Week 5 continues with 5-7 days of runing while maintaining the weekly long run. Speed sessions change to anaerobic threshold training, with one day of mile repeats and one day of an anaerobic threshold (tempo) run.",
+            "headnote": "Week 5 continues with 5-7 days of running while maintaining the weekly long run. Speed sessions change to anaerobic threshold training, with one day of mile repeats and one day of an anaerobic threshold (tempo) run.",
             "footnote": "", 
             "days": [
                 {
@@ -187,6 +187,321 @@
                     "distance": "10-13",
                     "workoutOverview": "",
                     "workoutDetails": "Increase your weekly long run by 1 mile. Keep your run at 60-75% effort. \n If you are racing today, you can still get your long run in by doing a 2-3 mile warm up jog before the race, and a 2-3 mile cool down run after the race (depending on the length of the race).",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 7,
+            "headnote": "Week 7 continues with 5-7 days of running with a weekly long run and 2 anaerobic threshold speed sessions. This is a good week to test your fitness level with a race on this weekend or next - the race should replace the 20-25 minute threshold run.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Intervals, 1 mile / 2 min, 3-4x",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Work on pacing. Run the first mile repeat at your race pace (80-85% of maximum heart rate). Try to run each mile 5 seconds faster than the previous mile. \n Cooldown: Easy 1 mile",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "5-7",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Whenever possible, try to run on a soft path or trail."
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Anaerobic threshold, 20-25 min",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Anaerobic threshold: Effort for the anaerobic part of the workout should be at race pace (80-85% of maximum heart rate). The effort should feel somewhat hard but doable. You should feel like you could keep going for a long time but if you picked up the pace you would beel like stopping. \n Cooldown: Easy 1 mile \n You should feel terrific within 30 minutes of completing the workout.",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "Rest days are very important for improving and maintaining fitness. During rest days or very easy recovery days, your body will assimilate the training that you have been doing, which makes you stronger and faster.",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Easy recovery",
+                    "distance": "5-8",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "If weight training is a regular part of your weekly activities, consider cutting back on your intensity and/or stopping altogether until after the race."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "10-13",
+                    "workoutOverview": "",
+                    "workoutDetails": "Run 3 miles at your goal race pace during the middle of the long run, and the last mile, to see if you can handle the pace. Stay hydrated.",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 8,
+            "headnote": "Week 8 is the last hard week of training of 5-7 days with a long run and 2 anaerobic threshold speed sessions. Try to increase your long run by a mile.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "If you feel tired from your training, you can always take an extra day off on Wednesday to let your body recover."
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Intervals, 1 mile / 2 min, 3-4x",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Work on pacing. Run the first mile repeat at your race pace (80-85% of maximum heart rate). Try to run each successive mile 5 seconds faster than the previous mile. \n Cooldown: Easy 1 mile",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "5-8",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Remember to stretch after each run."
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Anaerobic threshold, 20-25 min",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Anaerobic threshold: Run nonstop at race pace for 20-25 minutes. Try to stay between 80-85% of maximum heart rate for the entire 20-25 minutes. The effort should be quite hard - you should feel like you could keep going for a long time but if you picked up the pace you would want to stop. \n Cooldown: Easy 1 mile \n You should feel terrific within 30 minutes of completing the workout.",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-6",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "10-13",
+                    "workoutOverview": "",
+                    "workoutDetails": "Run 2 predicted race pace miles after you are 2 or 3 miles into the run and at the end of the run.",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 9,
+            "headnote": "Week 9 begins your taper. This week will be moderate in intensity. Your hard training is over and you should be doing a lot of easy running. Too much hard running before a long race can leave you tired on race day, with disappointing race results. \n This week includes doing training at projected race pace. Training volume should be reduced by 20-25% with perhaps an extra rest day. The weekly long run should be reduced by 2-3 miles.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Speed workout",
+                    "distance": "5-7",
+                    "workoutOverview": "Intervals, 1 mile / 2 min, 3-4x",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: 1 mile repeats at goal race pace with a 2-3 minute recovery. \n Cooldown: Easy 1 mile",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-6",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Most of your training is over. You will start having more days off. Remember to stretch on days off."
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Speed workout",
+                    "distance": "4-6 miles",
+                    "workoutOverview": "Intervals, 1 mile / 2 min, 2-3x",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: 1 mile repeats at goal race pace with a 2-3 minute recovery. \n Cooldown: Easy 1 mile",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Nothing you do today will make you faster on race day. Overtraining, however, can result in a bad race. You want to go into the race rested and frisky."
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Easy recovery",
+                    "distance": "5-6",
+                    "workoutOverview": "",
+                    "workoutDetails": "Run very easy.",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "6-9",
+                    "workoutOverview": "",
+                    "workoutDetails": "Run 2-3 miles at predicted race pace at the end of the run. The more race pace miles you run, the more likely it is that you will be able to hold that pace for 10 miles.",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 10,
+            "headnote": "Week 10 is a taper week with lots of rest in which weekly mileage is reduced by 50%. Your goal is to be fresh and fully recovered on race day. Easy days should be low mileage accompanied by rest days.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-6",
+                    "workoutOverview": "",
+                    "workoutDetails": "Make sure you are stretching and staying hydrated. If you feel strong, you can run a mile at race pace followed by an easy mile and then a second mile at race pace.",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "REST. It is important to stay hydrated during this taper."
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Easy recovery",
+                    "distance": "3-5",
+                    "workoutOverview": "",
+                    "workoutDetails": "Very slow jog. This is one of your last easy runs before the race. You should go out very leisurely. Start mentally preparing for the race.",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Eat a nice pasta dinner. Lay out your running gear the night before the race and pin your number on your shirt."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "RACE DAY",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Run easy for the first 10-15 minutes. AVOID GOING OUT TOO FAST. Zigzagging around other runners during the first mile when the course is the most crowded is counter-productive. The few seconds you save at the beginning may cost you minutes at the end of the race because of expending needless energy. Slowly pick up your pace until you are at your goal race pace by the end of the first mile. Try to run steady and comfortably. You can always pick up the pace for the last few miles. GOOD LUCK!"
+                }
+            ]
+        },
+        {
+            "week": 11,
+            "headnote": "Easy recovery week with no speedwork. It takes about 10 days to fully recover from a 10-mile race. By the weekend, you should be able to do your normal long run. You can resume full all-out training and speedwork the following week. Keep up your weekly long run of 10-12 miles over the spring and summer. This will enable you to run a half-marathon or full marathon this fall.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-6",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-6",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-6",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
                     "tip": ""
                 }
             ]
