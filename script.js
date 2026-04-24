@@ -111,6 +111,7 @@ fetch("training-plan.json")
             const dayNameHTML = node.querySelector(".day-name");
             const workoutTypeHTML = node.querySelector(".workout-type");
             const distanceHTML = node.querySelector(".distance");
+            const workoutOverviewAndDetailsHTML = node.querySelector(".workout-overview-and-details");
             const workoutOverviewHTML = node.querySelector(".workout-overview");
             const workoutDetailsHTML = node.querySelector(".workout-details");
             const tipHTML = node.querySelector(".tip");
@@ -118,8 +119,9 @@ fetch("training-plan.json")
 
             // Get some variables
             const hasDistance = json.distance && parseFloat(json.distance) > 0;
+            const hasWorkoutOverviewOrDetails = (json.workoutOverview && json.workoutOverview.trim() !== "") || (json.workoutDetails && json.workoutDetails.trim() !== "");
             const hasTip = json.tip && json.tip.trim() !== "";
-            const hasWorkoutDetails = json.workoutDetails && json.workoutDetails.trim() !== "";
+
             const workoutDetailsFormatted = json.workoutDetails
                 .split("\n")
                 .map(p => `<p>${p.trim()}</p>`)
@@ -128,9 +130,16 @@ fetch("training-plan.json")
             // Populate HTML sections
             dayNameHTML.textContent = json.day;
             workoutTypeHTML.textContent = json.workoutType;
+
             if (hasDistance) distanceHTML.textContent = ` (${json.distance} miles)`;
-            workoutOverviewHTML.textContent = json.workoutOverview;
-            if (hasWorkoutDetails) workoutDetailsHTML.innerHTML = workoutDetailsFormatted;
+
+            if (hasWorkoutOverviewOrDetails) {
+                workoutOverviewHTML.textContent = json.workoutOverview;
+                workoutDetailsHTML.innerHTML = workoutDetailsFormatted;
+            } else {
+                workoutOverviewAndDetailsHTML.classList.add("d-none");
+            }
+
             if (hasTip) {
                 tipTextHTML.textContent = json.tip;
             } else {

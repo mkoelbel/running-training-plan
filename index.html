@@ -14,18 +14,20 @@
 <body>
     <!-- Content -->
     <div class="container m-2 me-4">
+        <!-- Input: training level -->
         <select id="level-input" class="mb-3 me-3">
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
             <option value="advanced" selected>Advanced</option>
         </select>
-
+        <!-- Input: start date -->
         <label for="start-date-input">Start date:</label>
         <input type="date" id="start-date-input">
-
+        <!-- Title -->
         <div class="page-title">Training Plan</div>
         <div class="page-subtitle">Cherry Blossom 10-Mile Training Plan</div>
         <div class="level-subtitle page-subtitle"></div>
+        <!-- Training plan -->
         <div id="training-plan-container" class="mt-3"></div>
     </div>
 
@@ -46,22 +48,27 @@
 
     <!-- Day template -->
     <template id="day-template">
-        <details class="card mb-2" open>
-            <summary class="card-header fw-bold">
-                <span class="day-name"></span> - 
-                <span class="workout-type"></span>
-                <span class="distance"></span>
-            </summary>
-
+        <div class="card mb-2" open>
             <div class="card-body">
-                <div class="workout-overview fw-bold mb-1"></div>
-                <div class="workout-details"></div>
-                <div class="tip d-flex align-items-center gap-2">
+                <!-- Header -->
+                <div class="fw-bold">
+                    <span class="day-name"></span> - 
+                    <span class="workout-type"></span>
+                    <span class="distance"></span>
+                </div>
+                <!-- Details -->
+                <div class="workout-overview-and-details">
+                    <hr>
+                    <div class="workout-overview fw-bold mb-1"></div>
+                    <div class="workout-details"></div>
+                </div>
+                <!-- Tip -->
+                <div class="tip d-flex align-items-center gap-2 mt-2">
                     <i class="bi bi-lightbulb-fill text-warning"></i>
                     <span class="tip-text fst-italic"></span>
                 </div>
             </div>
-        </details>
+        </div>
     </template>
 
     <!-- JS scripts -->
