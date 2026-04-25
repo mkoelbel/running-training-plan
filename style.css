@@ -1,3 +1,47 @@
+:root {
+    --oatmeal: #f4f2f0;
+    --oatmeal-darker: #e9e6e2;
+    --soft-black: #404040;
+    --teal: #64b4b4;
+    --teal-darker: #4b9b9b;
+    --navy: #464d6d;
+    --navy-lighter: #b6b9c9;
+    --warning-yellow: #ffd24d;
+}
+
+/* Entire page */
+body {
+    background-color: var(--oatmeal);
+}
+
+* {
+    color: var(--soft-black);
+}
+
+hr {
+    border: 1px dashed;
+}
+
+/* Inputs */
+.container select,
+.container input {
+    background-color: var(--navy-lighter);
+    border: 1px solid var(--soft-black);
+    border-radius: 4px;
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--teal);
+    border-color: var(--teal);
+}
+
+.btn:hover {
+    background-color: var(--teal-darker);
+    border-color: var(--teal-darker);
+}
+
+/* Text */
 .page-title
 {
     font-size: x-large;
@@ -18,3 +62,34 @@
 .workout-details p {
     margin-bottom: 0.3rem;
 }
+
+/* Cards */
+.week-card summary {
+    background-color: var(--navy);
+    color: var(--oatmeal-darker);
+}
+.week-card summary span {
+    color: var(--oatmeal-darker);
+}
+.week-card {
+    background-color: var(--navy-lighter);
+}
+
+.day-card {
+    background-color: var(--navy-lighter);
+}
+.day-card .card-body .tip i {
+    color: var(--warning-yellow);
+}
+
+/* .day-card .card-body .header, 
+.day-card .card-body .header span {
+    color: var(--oatmeal-darker);
+}
+.day-card .card-body .workout-overview-and-details .workout-overview, 
+.day-card .card-body .workout-overview-and-details .workout-details * {
+    color: var(--oatmeal-darker);
+}
+.day-card .card-body .tip .tip-text {
+    color: var(--oatmeal-darker);
+} */

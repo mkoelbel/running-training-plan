@@ -13,9 +13,9 @@
 
 <body>
     <!-- Content -->
-    <div class="container m-2 me-4">
+    <div class="container m-2">
         <!-- Input: training level -->
-        <select id="level-input" class="mb-3 me-3">
+        <select id="level-input" class="mb-2 me-3">
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
             <option value="advanced" selected>Advanced</option>
@@ -40,7 +40,7 @@
 
     <!-- Week template -->
     <template id="week-template">
-        <details class="card mb-3">
+        <details class="week-card card mb-2">
             <summary class="card-header fw-bold">
                 Week <span class="week-number"></span>
             </summary>
@@ -55,10 +55,10 @@
 
     <!-- Day template -->
     <template id="day-template">
-        <div class="card mb-3" open>
+        <div class="day-card card mb-3" open>
             <div class="card-body">
                 <!-- Header -->
-                <div class="fw-bold">
+                <div class="header fw-bold">
                     <span class="day-name"></span> - 
                     <span class="workout-type"></span>
                     <span class="distance"></span>
@@ -71,7 +71,8 @@
                 </div>
                 <!-- Tip -->
                 <div class="tip d-flex align-items-center gap-2 mt-2">
-                    <i class="bi bi-lightbulb-fill text-warning"></i>
+                    <!-- <i class="bi bi-lightbulb-fill text-warning"></i> -->
+                    <i class="bi bi-lightbulb-fill"></i>
                     <span class="tip-text fst-italic"></span>
                 </div>
             </div>
