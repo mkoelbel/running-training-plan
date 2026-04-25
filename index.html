@@ -27,6 +27,13 @@
         <div class="page-title">Training Plan</div>
         <div class="page-subtitle">Cherry Blossom 10-Mile Training Plan</div>
         <div class="level-subtitle page-subtitle"></div>
+        <!-- Buttons -->
+        <div class="mt-2">
+            <!-- Button: expand/collapse -->
+            <button id="expand-collapse-button" type="button" class="btn btn-primary">Collapse All</button>
+            <!-- Button: reset -->
+            <button id="reset-button" type="button" class="btn btn-primary">Reset</button>
+        </div>
         <!-- Training plan -->
         <div id="training-plan-container" class="mt-3"></div>
     </div>
@@ -48,7 +55,7 @@
 
     <!-- Day template -->
     <template id="day-template">
-        <div class="card mb-2" open>
+        <div class="card mb-3" open>
             <div class="card-body">
                 <!-- Header -->
                 <div class="fw-bold">

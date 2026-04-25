@@ -9,11 +9,18 @@ fetch("training-plan.json")
         // Check console to ensure JSON file is loaded
         console.log(`data: ${json}`);
 
-        // Get HTML sections (user inputs, containers, templates, etc) for the page
+        // Get HTML sections for the page
+        // User inputs
         const levelInput = document.getElementById("level-input");
         const startDateInput = document.getElementById("start-date-input");
+        // Buttons
+        const expandCollapseButton = document.getElementById("expand-collapse-button");
+        const resetButton = document.getElementById("reset-button");
+        // Titles
         const levelHTML = document.querySelector(".level-subtitle");
+        // Containers
         const planContainer = document.getElementById("training-plan-container");
+        // Templates
         const weekTemplate = document.getElementById("week-template");
         const dayTemplate = document.getElementById("day-template");
 
@@ -31,20 +38,39 @@ fetch("training-plan.json")
         const weekNum = calculateCurrentWeekNum(startDateInput.value);
         renderPlan(levelInput.value, weekNum);
 
-        // On changing the level input, re-render the training plan
+        // ---------- Event listeners ----------
         levelInput.addEventListener("change", function () {
-            const weekNum = calculateCurrentWeekNum(startDateInput.value);
-            renderPlan(this.value, weekNum);
+            getCurrentWeekAndRenderPlan(startDateInput.value, this.value);
         });
 
-        // On changing the start date input, re-calculate the current week number and re-render the training plan
         startDateInput.addEventListener("change", function() {
-            const weekNum = calculateCurrentWeekNum(this.value);
-            renderPlan(levelInput.value, weekNum);
+            getCurrentWeekAndRenderPlan(this.value, levelInput.value);
         })
 
-        // Functions:
-        // Build the HTML for the training plan
+        expandCollapseButton.addEventListener("click", function() {
+            expandCollapse();
+        });
+
+        resetButton.addEventListener("click", function() {
+            getCurrentWeekAndRenderPlan(startDateInput.value, levelInput.value);
+        });
+
+        // ---------- Functions ----------
+        // Calculate the current week given a starting date, and render the training plan for the given level, with the current week expanded
+        // Inputs: 
+        //   - Date when training started (for calculating the current week number) 
+        //   - Training plan level (beginner, intermediate, advanced)
+        // Output: HTML for the training plan container
+        function getCurrentWeekAndRenderPlan(startDate, level) {
+            const weekNum = calculateCurrentWeekNum(startDate);
+            renderPlan(level, weekNum);
+        }
+
+        // Build the HTML for the training plan for the given level, with the given week expanded
+        // Inputs: 
+        //   - Training plan level (beginner, intermediate, advanced)
+        //   - Week number to expand
+        // Output: HTML for the training plan container
         function renderPlan(level, weekNumToExpand) {
             // Clear the container
             planContainer.innerHTML = "";
@@ -75,6 +101,8 @@ fetch("training-plan.json")
         }
 
         // Build the HTML for a week
+        // Inputs: JSON for the given week
+        // Output: HTML node for the week
         function renderWeek(json) {
             // Create an HTML node for the current week
             const node = weekTemplate.content.cloneNode(true);
@@ -103,6 +131,8 @@ fetch("training-plan.json")
         }
 
         // Build the HTML for a day, given JSON data and an HTML template
+        // Inputs: JSON for the given day
+        // Output: HTML node for the day
         function renderDay(json) {
             // Create an HTML node for the current day
             const node = dayTemplate.content.cloneNode(true);
@@ -122,6 +152,7 @@ fetch("training-plan.json")
             const hasWorkoutOverviewOrDetails = (json.workoutOverview && json.workoutOverview.trim() !== "") || (json.workoutDetails && json.workoutDetails.trim() !== "");
             const hasTip = json.tip && json.tip.trim() !== "";
 
+            const distanceOrTimeUnit = (levelInput.value == "beginner") ? "minutes" : "miles";
             const workoutDetailsFormatted = json.workoutDetails
                 .split("\n")
                 .map(p => `<p>${p.trim()}</p>`)
@@ -131,7 +162,7 @@ fetch("training-plan.json")
             dayNameHTML.textContent = json.day;
             workoutTypeHTML.textContent = json.workoutType;
 
-            if (hasDistance) distanceHTML.textContent = ` (${json.distance} miles)`;
+            if (hasDistance) distanceHTML.textContent = ` (${json.distance} ${distanceOrTimeUnit})`;
 
             if (hasWorkoutOverviewOrDetails) {
                 workoutOverviewHTML.textContent = json.workoutOverview;
@@ -153,10 +184,33 @@ fetch("training-plan.json")
         // Given a start date, calculate the current week number (week differential using 1-based indexing)
         // (e.g. if today is in the same week as the start date, return 1. If it's the
         // week after the week of the start date, return 2.)
+        // Inputs: Date when training started
+        // Output: Number of weeks into the training plan that we currently are
         function calculateCurrentWeekNum(startDate) {
             const startWeekNum = getISOWeek(new Date(startDate));
             const currentWeekNum = getISOWeek(new Date());
             const weekNumToDisplay = currentWeekNum - startWeekNum + 1; // Use 1-based indexing
             return weekNumToDisplay;
+        }
+
+        // Expand or collapse all weeks, depending on whether any weeks are currently expanded.
+        // If any week is currently expanded, collapse all. Otherwise, expand all.
+        // (Prefer collapsing all rather than expanding all, since collapsing all is cleaner.)
+        // Inputs: N/A
+        // Output: N/A
+        function expandCollapse() {
+            const weekNodes = planContainer.querySelectorAll("details");
+            const anyWeekIsExpanded = Array.from(weekNodes).some(w => w.open);
+            if (anyWeekIsExpanded) {
+                weekNodes.forEach(w => {
+                    w.open = false;
+                });
+                expandCollapseButton.textContent = "Expand All";
+            } else {
+                weekNodes.forEach(w => {
+                    w.open = true;
+                });
+                expandCollapseButton.textContent = "Collapse All";
+            }
         }
     });
