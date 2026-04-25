@@ -1012,5 +1012,511 @@
                 }
             ]
         }
+    ],
+    "beginner": [
+        {
+            "week": 4,
+            "headnote": "In week 4, your longest walk-run is 48 minutes, with longer distances between walking breaks or none at all. Don't worry about the walk-run approach, soon you will be running non-stop. You may feel like you are working harder, and you are!!",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Think about visiting a running specialty store in person or online to pick up a new pair of running shoes and some high-tech running clothes for training."
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Run-walk",
+                    "distance": "40",
+                    "workoutOverview": "1 min / 9 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 9 minutes (4 times)",
+                    "tip": "Keep your arms and shoulders relaxed while running."
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Run-walk",
+                    "distance": "27",
+                    "workoutOverview": "1 min / 8 min, 3x",
+                    "workoutDetails": "Walk 1 minute, run 8 minutes (3 times)",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Run-walk",
+                    "distance": "40",
+                    "workoutOverview": "1 min / 9 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 9 minutes (4 times)",
+                    "tip": "Try to maintain a conversational effort at all times. You should not be completely out of breath."
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "If you want to stretch on your rest day, before you do, go for a brisk walk or an easy ride on a bike to warm up your muscles. Never stretch cold muscles."
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Run-walk",
+                    "distance": "48",
+                    "workoutOverview": "1 min / 11 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 11 minutes (4 times)",
+                    "tip": "You should start getting used to only having very short walking breaks. You can skip the walking break if you feel you do not need it. It is really important to stay hydrated on these longer runs."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Run-walk",
+                    "distance": "30",
+                    "workoutOverview": "1 min / 14 min, 2x",
+                    "workoutDetails": "Walk 1 minute, run 14 minutes (2 times)",
+                    "tip": "Try to keep your shoulders relaxed while running. Arms should swing like a pendulum."
+                }
+            ]
+        },
+        {
+            "week": 5,
+            "headnote": "Week 5 has a little bit of everything. It includes your first non-stop running days as well as a couple of longer (45 and 48-minute) walk-runs with minimal walking. Don't worry if you miss an occasional workout. Doing most of the workouts will result in success on race day.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Think how far you have already come from your first day of training. You just finished your first month of training. 6 weeks to go before the race. If you have followed the first 4 weeks of training, you are on target to be able to run the entire 10 miles on race day."
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Run-walk",
+                    "distance": "45",
+                    "workoutOverview": "1 min / 14 min, 3x",
+                    "workoutDetails": "Walk 1 minute, run 14 minutes (3 times)",
+                    "tip": "On the longer runs, carry a squeese bottle filled with a sports drink to stay properly hydrated."
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Be prepared for your first day of non-stop running tomorrow. Spend your time off stretching, doing light weights and/or Yoga/Pilates."
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Run",
+                    "distance": "25",
+                    "workoutOverview": "",
+                    "workoutDetails": "Run 25 minutes (no stopping). Keep focused on your goal of running without stopping. If you feel like stopping, try slowing down to see if that helps.",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Congratulations on your first non-stop run."
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "",
+                    "distance": "51",
+                    "workoutOverview": "1 min / 16 min, 3x",
+                    "workoutDetails": "Walk 1 minute, run 16 minutes (3 times)",
+                    "tip": "Try to run as long as you can without a break. Instead of stopping to walk, try to slow down a bit and keep moving."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Run",
+                    "distance": "27",
+                    "workoutOverview": "",
+                    "workoutDetails": "Run 27 minutes non-stop. It should start feeling easier. Go out a bit slower for the first 10 minutes and then pick up the pace.",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 6,
+            "headnote": "Week 6 includes 2 long walk-runs of 50 and 56 minutes, plus some longer non-stop runs. There is also 1 aerobic interval day designed to build up your anaerobic threshold, which helps to increase your pace. Things should start coming together for you if you have been following the program. Now that you are starting to run longer, including non-stop runs and short intervals, you may want to start using a sports watch to assist you in your training if you haven't been using it already. Besides calculating your time, distance, and pace, sports watches record other bio-metric data such as number of hours of sleep you need at night.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "You are more than half way through your training. You have truly earned the title of \"runner\" by this point. Take a look back to see how much progress you have made. You should feel good about what you have done so far and where you are headed."
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Run-walk",
+                    "distance": "50",
+                    "workoutOverview": "1 min / 24 min, 2x",
+                    "workoutDetails": "Walk 1 minute, run 24 minutes (2 times)",
+                    "tip": "Wearing sunglasses with UV protection can help protect your eyes on sunny days."
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Run",
+                    "distance": "33",
+                    "workoutOverview": "",
+                    "workoutDetails": "33 minutes non-stop running. If you can finish this run without stopping, you are on your way to being able to finish the 10 mile race.",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Run",
+                    "distance": "30",
+                    "workoutOverview": "",
+                    "workoutDetails": "30 minutes non-stop running.",
+                    "tip": "Continue to work on your flexibility be stretching after every run and on your days off."
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Make sure you are getting a lot of rest on these days off. Next week you will begin 3 consecutive days of running without a walking break."
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Run-walk",
+                    "distance": "56",
+                    "workoutOverview": "1 min / 27 min, 2x",
+                    "workoutDetails": "Walk 1 minute, run 27 minutes (2 times)",
+                    "tip": "See how long you ocan run before needing a walking break. Skip the walking break if you can."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Speed workout",
+                    "distance": "30",
+                    "workoutOverview": "Intervals, 15 sec / 45 sec, 10 minutes",
+                    "workoutDetails": "Warmup: Easy 10 minutes \n Intervals: Alternate during the next 10 minutes by running 15 seconds at a slightly harder effort (DO NOT SPRINT!) followed by 45 seconds of very easy jogging for a total of 10 times. \n Cooldown: Easy 10 minutes \n You should be huffing and puffing during the 10 minutes of aerobic intervals.",
+                    "tip": "If you don't have a watch, try counting 22 left foot strikes, which is approximately 15 seconds, and then cound 67 left foot strikes, which is approximately 45 seconds."
+                }
+            ]
+        },
+        {
+            "week": 7,
+            "headnote": "Week 7 has no more walk-runs. You are getting closer to race day. You will be doing your first long non-stop runs of 60 and 65 minutes, a couple of shorter runs, and 1 day of aerobic intervals. It is okay if you need to stop for a moment during the long runs but try to limit the time to simply catching your breath. Thousands have successfully completed this program - you can do it too!",
+            "footnote": "3 weeks to go. Your training is almost over. If you need to replace your running shoes, now is the time to consider getting a new pair of shoes to break them in before race day. You do not want to run the race in a brand-new pair of shoes.", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "20",
+                    "workoutOverview": "",
+                    "workoutDetails": "20 minutes of easy running. This shoudl be an easy recovery day from the hard day you had on Sunday.",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Long run",
+                    "distance": "60",
+                    "workoutOverview": "",
+                    "workoutDetails": "Run the entire 60 minutes without a walking break. Start out slowly for the first 10-15 minutes to help you make it through this run without taking a walking break.",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Easy recovery",
+                    "distance": "35",
+                    "workoutOverview": "",
+                    "workoutDetails": "35 minutes of easy running. This recovery run should be at a very easy conversational pace. No heavy breathing.",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Speed workout",
+                    "distance": "35",
+                    "workoutOverview": "Intervals, 15 sec / 45 sec, 15 minutes",
+                    "workoutDetails": "Warmup: Easy 10 minutes \n Intervals: For the next 10 minutes, run 15 seconds hard (DO NOT SPRINT) followed by a 45-second very easy jog. The 15 second portion should not be a sprint but instead should simply be a slightly harder effort than you normally run. Repeat the 15/45 pattern 15 times for a total time of 15 minutes. \n Cooldown: Easy 10 minutes \n Try to stay relaxed during the 15 seconds of hard running.",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "65",
+                    "workoutOverview": "",
+                    "workoutDetails": "65 minutes without a walking break.",
+                    "tip": "Don't worry that you have not yet run 10 miles. It is not necessary to have run 10 miles in training to complete the race. Thousands of beginners have followed this program and successfully completed the 10 miles. You should be able to finish the race if you have been following the training schedule."
+                }
+            ]
+        },
+        {
+            "week": 8,
+            "headnote": "Week 8 has several long runs with 1 set of back-to-back long runs of 60 and 80 minutes. These runs are more important than the shorter 40-minute runs, so if you need to skip a day, it should be a 40-minute run. You can always adjust the days of the long runs, as long as you do not do 3 consecutive long runs. Don't worry if you need to take a short break during the long runs - use the break to hydrate. This is essentially what you do when you stop at one of the water of Gatorade stations during the race.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Keep on stretching and staying hydrated."
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "40",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Think how hard it was to run for even a few minutes at the beginning. Think how much easier it has become and how far you have come."
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Speed workout",
+                    "distance": "40",
+                    "workoutOverview": "Intervals, 15 sec / 45 sec, 15 minutes",
+                    "workoutDetails": "Warmup: Easy 10 minutes \n Intervals: For the next 15 minutes, run hard 15 seconds (DO NOT SPRINT) followed by a 45-second easy jog. Do this 15/45 pattern for a total of 15 minutes or 15 times. \n Cooldown: Easy 10 minutes",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Long run",
+                    "distance": "70",
+                    "workoutOverview": "",
+                    "workoutDetails": "Nonstop running",
+                    "tip": "Start visualizing how you will look and feel when you cross the finish line on race day."
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Only 2 weeks to go. You should be feeling very strong by now."
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Long run",
+                    "distance": "60",
+                    "workoutOverview": "",
+                    "workoutDetails": "Easy run",
+                    "tip": "This run should be a very easy effort because tomorrow you have a long run to complete."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "80",
+                    "workoutOverview": "",
+                    "workoutDetails": "Finish the long run without walking.",
+                    "tip": "Try to stay relaxed during this run. It may seem really long, but it you have been doing the training you may be able to complete the run without stopping. If you have to walk, take very, very short walking breaks - only a few seconds."
+                }
+            ]
+        },
+        {
+            "week": 9,
+            "headnote": "Week 9 has several shorted runs and your last long run of 100 minutes. The long run is the most important run in your training. Completing it should lead to a successful race. Feel free to move the long run up a day or 2 if you need to change your schedule, but only do that run after a rest day.",
+            "footnote": "1 week to go. The taper period has started. Your main goal now should be to be rested by race day. Keep in mind that it is not necessary to have completed a 10-mile training run to complete the 10 mile race. Thousands of beginning runners have followed this program and successfully completed past races.", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "You may feel sore from yesterday's run. That is normal. The stiffness should go away in a couple of days. Try stretching and go for an easy walk."
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "40",
+                    "workoutOverview": "",
+                    "workoutDetails": "Easy run. Keep your effort easy and go at a conversational pace. Stop for water or a sports drink if you are thirsty. If you are still feeling tired from Sunday's long run, take today off.",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "35",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Don't be surprised if you are still a bit sore from Sunday's long run."
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Easy recovery",
+                    "distance": "30",
+                    "workoutOverview": "",
+                    "workoutDetails": "Easy run",
+                    "tip": "Your training is almost over. This is your last hard week."
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Try to stay off your feet in preparation for your longest training run."
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Long run",
+                    "distance": "100",
+                    "workoutOverview": "",
+                    "workoutDetails": "Easy non-stop run",
+                    "tip": "This is your last long run before the race. Try to practice your pre-race routine - eat what you plan to eat on the morning of the race, empty your bladder and bowels, and wear the running gear and shoes you plan to use on race day."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 10,
+            "headnote": "This is a taper week with very little running. The hard training is over. Your goal is to feel strong and ready to go on race day. Keep hydrating, get plenty of rest, and start carb-loading during the week. Fight the temptation to run hard as you may be feeling frisky by the end of the week. If you missed some runs, now is not the time to cram extra miles in.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Easy recovery",
+                    "distance": "35",
+                    "workoutOverview": "",
+                    "workoutDetails": "Start taper. If you are still feeling tired from the 100-minute run, take the day off.",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "Rest, Rest, Rest",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "25",
+                    "workoutOverview": "",
+                    "workoutDetails": "Continue to reduce the amount of running time. Make sure that you keep this run very easy.",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Continue to stretch and keep hydrated with water or a sports drink."
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Easy recovery",
+                    "distance": "20",
+                    "workoutOverview": "",
+                    "workoutDetails": "More tapering. This is your last run before the race. Run very easy. You should go out very leisurely.",
+                    "tip": "Consider picking up your race packet."
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Eat a nice pasta dinner. Lay out your running gear the night before the race and pin your number on your shirt."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "RACE DAY",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Run easy for the first 10-15 minutes. Avoid starting out too fast and zigzagging around other runners during the first mile when it is the most crowded. The few seconds you save may cost you minutes at the end of the race because of expending needless energy. Slowly pick up your pace until you are at your goal race pace by the end of the first mile. Try to run steady and comfortably. You can always pick up the pace for the last few miles. GOOD LUCK!"
+                }
+            ]
+        },
+        {
+            "week": 11,
+            "headnote": "CONGRATULATIONS! Now that you have completed the race, running can become a way of life for you if you keep it up. For those of you who want to keep running now that you have gotten in great shape, try to run 3-4 times per week with a weekly long run of 40-60 minutes. For additional motivation and companionship, join a running club or go to your local running store to find a training group.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "Go for an easy walk to loosen up. A yoga class might help you reduce some of the soreness and tightness from going the distance.",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "Go for an easy walk to loosen up. A yoga class might help you reduce some of the soreness and tightness from going the distance.",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "20-30",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Easy recovery",
+                    "distance": "20-30",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Easy recovery",
+                    "distance": "20-30",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                }
+            ]
+        }
     ]
 }
