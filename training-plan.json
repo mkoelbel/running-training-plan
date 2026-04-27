@@ -3,6 +3,195 @@
     "startDateDefault": "2026-04-15",
     "advanced": [
         {
+            "week": 1,
+            "headnote": "",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 2,
+            "headnote": "",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 3,
+            "headnote": "",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                }
+            ]
+        },
+        {
             "week": 4,
             "headnote": "Week 4 continues with 5-7 days of running during which you will aim to increase your weekly long run by 1 mile and add 1 additional repeat to the hill workout. This is the last week of hill repeats and fartlek runs. New speed workouts begin next week.",
             "footnote": "Congratulations! You have just completed your first month of training. Six weeks to go before the race. Remember to stay hydrated before, during, and after your runs, even in cold weather.", 
@@ -509,6 +698,195 @@
     ],
     "intermediate": [
         {
+            "week": 1,
+            "headnote": "",
+            "footnote": "Don't be surprised if the first week was somewhat difficult, especially if you haven't been running.", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Stretch after every run. Don't stretch before running with cold muscles."
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Speed workout",
+                    "distance": "3-6",
+                    "workoutOverview": "Intervals, 15 sec / 45 sec, 1-3 miles",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace for 15 seconds (THIS IS NOT A SPRINT!), jog for 45 seconds, and repeat until you have run 1-3 miles. \n Cooldown: Easy 1 mile \n If you only ran 1-2 miles of intervals last week, try adding an additional mile of intervals this week. You should not be huffing and puffing or be out of breath during this workout. If you are, you may be running too hard. The purpose of this workout is to work on leg turnover and prepare you for future weeks when you will be running at a fast pace for a longer distance.",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Easy recovery",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "For safety reasons, don't wear earbuds or headphones when running in an isolated area or on a road with traffic. Be aware of your surroundings at all times. If running on the road, run towards traffic and stay alert for oncoming vehicles. Remember that cars don't always honor the right of way."
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Easy recovery",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "If you are running on a windy day, try to plan your route so you are running into the wind at the start of your run. This way you will be running with the wind at the end."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "4-7",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "If you are running on a treadmill, adjust the elevation to 1.0 to account for the wind resistance when running outdoors."
+                }
+            ]
+        },
+        {
+            "week": 2,
+            "headnote": "Week 2 continues with 4-5 days of training, as well as rest days to allow your body to recover.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Staying hydrated during training is very important."
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "2-5",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "When running in cold weather, wear multiple light layers instead of 1 heavy layer. You lose a lot of heat through your head and hands, so be sure to wear a hat and gloves."
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Speed workout",
+                    "distance": "3-6",
+                    "workoutOverview": "Intervals, 15 sec / 45 sec, 1-3 miles",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace for 15 seconds (THIS IS NOT A SPRINT!), jog for 45 seconds, and repeat until you have run 1-3 miles. \n Cooldown: Easy 1 mile \n If you only ran 1-2 miles of intervals last week, try adding an additional mile of intervals this week. You should not be huffing and puffing or be out of breath during this workout. If you are, you may be running too hard. The purpose of this workout is to work on leg turnover and prepare you for future weeks when you will be running at a fast pace for a longer distance.",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Easy recovery",
+                    "distance": "2-5",
+                    "workoutOverview": "",
+                    "workoutDetails": "This is an optional running day. If you decide to run, make it a very easy run to allow your body to recover.",
+                    "tip": "When running in the dark, wear reflective clothing, including a reflective vest."
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Read a book on sports nutrition and think about some ways to improve your diet. Start by cutting down on junk food, sugar, and alcohol."
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Easy recovery",
+                    "distance": "",
+                    "workoutOverview": "3-5",
+                    "workoutDetails": "",
+                    "tip": "Be careful running on ice and snow. Run with short, choppy strides to stay balanced and avoid slipping or falling. Remember to run into the wind at the start of your run so you will be running with the wind at the end."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "5-8",
+                    "workoutOverview": "",
+                    "workoutDetails": "Increase last week's long run by 1 mile.",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 3,
+            "headnote": "Week 3 continues with 4-5 days of training and longer distances. Consider using a sports watch or running app for a scientific approach to training.",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "Rest days are an important part of the training program. They help your body assimilate the gains from your training days. You can always stretch or do yoga or pilates on your days off."
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "Easy recovery",
+                    "distance": "3-6",
+                    "workoutOverview": "",
+                    "workoutDetails": "Don't be surprised if your legs are still tired from Sunday's long run. ",
+                    "tip": "Stretch after every run. Don't stretch before running with cold muscles."
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "Speed workout",
+                    "distance": "4-7",
+                    "workoutOverview": "Intervals, 15 sec / 45 sec, 2-3 miles",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace for 15 seconds (THIS IS NOT A SPRINT!), jog for 45 seconds, and repeat until you have run 1-3 miles. \n Cooldown: Easy 1 mile \n If you only ran 1-2 miles of intervals last week, try adding an additional mile of intervals this week. You should not be huffing and puffing or be out of breath during this workout. If you are, you may be running too fast. The purpose of this workout is to work on leg turnover and prepare you for future weeks when you will be running at a fast pace for a longer time.",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "Easy recovery",
+                    "distance": "3-5",
+                    "workoutOverview": "",
+                    "workoutDetails": "Increase your easy recovery run by 1 mile.",
+                    "tip": "For safety reasons, don't wear earbuds or headphones when running in an isolated area or on a road with traffic. Run towards traffic. Be aware of your surroundings at all times."
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "This rest day is important to let your legs recover before Sunday's long run. You will feel stronger after taking a day off."
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "Easy recovery",
+                    "distance": "3-5",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": "When running on the road, always run towards traffic and stay alert for oncoming vehicles. Cars don't always honor the right of way."
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "Long run",
+                    "distance": "5-8",
+                    "workoutOverview": "",
+                    "workoutDetails": "Long run at a conversational pace.",
+                    "tip": "Staying hydrated during a long run is very important."
+                }
+            ]
+        },
+        {
             "week": 4,
             "headnote": "You are beginning your fourth week of training. Daily runs continue to increase, as does the weekly long run. You should start feeling stronger.",
             "footnote": "Congratulations! You have just finished your first month of training. 6 weeks to go before the race.", 
@@ -1014,6 +1392,195 @@
         }
     ],
     "beginner": [
+        {
+            "week": 1,
+            "headnote": "",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 2,
+            "headnote": "",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                }
+            ]
+        },
+        {
+            "week": 3,
+            "headnote": "",
+            "footnote": "", 
+            "days": [
+                {
+                    "day": "Monday",
+                    "workoutType": "Rest day",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Tuesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Wednesday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Thursday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Friday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Saturday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                },
+                {
+                    "day": "Sunday",
+                    "workoutType": "",
+                    "distance": "",
+                    "workoutOverview": "",
+                    "workoutDetails": "",
+                    "tip": ""
+                }
+            ]
+        },
         {
             "week": 4,
             "headnote": "In week 4, your longest walk-run is 48 minutes, with longer distances between walking breaks or none at all. Don't worry about the walk-run approach, soon you will be running non-stop. You may feel like you are working harder, and you are!",
