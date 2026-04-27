@@ -4,8 +4,8 @@
     "advanced": [
         {
             "week": 1,
-            "headnote": "",
-            "footnote": "", 
+            "headnote": "Congratulations on starting you training! This program consists of 5-7 days per week of running, including 1 long run and 2 speed sessions per week, with your distance gradually increasing. Speed sessions vary over the course of the program, and consist of hills, fartlek runs, intervals, and anaerobic threshold runs. Rest days are built in to let your body recover and assimilate your training.",
+            "footnote": "Congratulations on completing your first week of training!", 
             "days": [
                 {
                     "day": "Monday",
@@ -17,31 +17,31 @@
                 },
                 {
                     "day": "Tuesday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Speed workout",
+                    "distance": "3-6",
+                    "workoutOverview": "Hills, 5-7x",
+                    "workoutDetails": "Find a hill 200-400 meters long. \n Warmup: Easy 1 mile \n Hills: Surge up the hill, keeping arms relaxed. Jog down, and repeat 5-7 times. \n Cooldown: Easy 1 mile",
                     "tip": ""
                 },
                 {
                     "day": "Wednesday",
-                    "workoutType": "",
-                    "distance": "",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-6",
                     "workoutOverview": "",
                     "workoutDetails": "",
                     "tip": ""
                 },
                 {
                     "day": "Thursday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Intervals, 1-2-3-4-5-6",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace to race pace (not a sprint) for 1 minute, jog 1 minute, pick up the pace for 2 minutes, jog 1 minute, pick up the pace for 3 minutes, jog 1 minute, etc, until you work up to 6 minutes. \n Cooldown: Easy 1 mile",
                     "tip": ""
                 },
                 {
                     "day": "Friday",
-                    "workoutType": "",
+                    "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
                     "workoutDetails": "",
@@ -49,25 +49,25 @@
                 },
                 {
                     "day": "Saturday",
-                    "workoutType": "",
-                    "distance": "",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-7",
                     "workoutOverview": "",
                     "workoutDetails": "",
                     "tip": ""
                 },
                 {
                     "day": "Sunday",
-                    "workoutType": "",
-                    "distance": "",
+                    "workoutType": "Long run",
+                    "distance": "7-10",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Increase your weekly long run by 1 mile. Run at a conversational pace.",
                     "tip": ""
                 }
             ]
         },
         {
             "week": 2,
-            "headnote": "",
+            "headnote": "Week 2 continues with 5-7 days of running. Your goal is to increase your long run by 1 mile and add 1 additional repeat to the hill workout.",
             "footnote": "", 
             "days": [
                 {
@@ -80,31 +80,31 @@
                 },
                 {
                     "day": "Tuesday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Speed workout",
+                    "distance": "3-6",
+                    "workoutOverview": "Hills, 6-8x",
+                    "workoutDetails": "Find a hill 200-400 meters long. \n Warmup: Easy 1 mile \n Hills: Surge up the hill, keeping arms relaxed. Jog down, and repeat 6-8 times. \n Cooldown: Easy 1 mile",
                     "tip": ""
                 },
                 {
                     "day": "Wednesday",
-                    "workoutType": "",
-                    "distance": "",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-6",
                     "workoutOverview": "",
                     "workoutDetails": "",
                     "tip": ""
                 },
                 {
                     "day": "Thursday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Intervals, 1-2-3-4-5-6",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace to race pace (not a sprint) for 1 minute, jog 1 minute, pick up the pace for 2 minutes, jog 1 minute, pick up the pace for 3 minutes, jog 1 minute, etc, until you work up to 6 minutes. \n Cooldown: Easy 1 mile",
                     "tip": ""
                 },
                 {
                     "day": "Friday",
-                    "workoutType": "",
+                    "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
                     "workoutDetails": "",
@@ -112,25 +112,25 @@
                 },
                 {
                     "day": "Saturday",
-                    "workoutType": "",
-                    "distance": "",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-7",
                     "workoutOverview": "",
                     "workoutDetails": "",
                     "tip": ""
                 },
                 {
                     "day": "Sunday",
-                    "workoutType": "",
-                    "distance": "",
+                    "workoutType": "Long run",
+                    "distance": "8-11",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Increase your weekly long run by 1 mile.",
                     "tip": ""
                 }
             ]
         },
         {
             "week": 3,
-            "headnote": "",
+            "headnote": "Week 3 continues with 5-7 days of running. Your goal is to increase your long run by 1 mile and add 1 additional repeat to the hill workout.",
             "footnote": "", 
             "days": [
                 {
@@ -143,31 +143,31 @@
                 },
                 {
                     "day": "Tuesday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Speed workout",
+                    "distance": "4-7",
+                    "workoutOverview": "Hills, 7-9x",
+                    "workoutDetails": "Find a hill 200-400 meters long. \n Warmup: Easy 1 mile \n Hills: Surge up the hill, keeping arms relaxed. Jog down, and repeat 7-9 times. \n Cooldown: Easy 1 mile",
                     "tip": ""
                 },
                 {
                     "day": "Wednesday",
-                    "workoutType": "",
-                    "distance": "",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-7",
                     "workoutOverview": "",
                     "workoutDetails": "",
                     "tip": ""
                 },
                 {
                     "day": "Thursday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Speed workout",
+                    "distance": "5-8",
+                    "workoutOverview": "Intervals, 1-2-3-4-5-6",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace to race pace (not a sprint) for 1 minute, jog 1 minute, pick up the pace for 2 minutes, jog 1 minute, pick up the pace for 3 minutes, jog 1 minute, etc, until you work up to 6 minutes. If you feel good, try to run 7 minutes at race pace. \n Cooldown: Easy 1 mile",
                     "tip": ""
                 },
                 {
                     "day": "Friday",
-                    "workoutType": "",
+                    "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
                     "workoutDetails": "",
@@ -175,25 +175,25 @@
                 },
                 {
                     "day": "Saturday",
-                    "workoutType": "",
-                    "distance": "",
+                    "workoutType": "Easy recovery",
+                    "distance": "5-8",
                     "workoutOverview": "",
                     "workoutDetails": "",
                     "tip": ""
                 },
                 {
                     "day": "Sunday",
-                    "workoutType": "",
-                    "distance": "",
+                    "workoutType": "Long run",
+                    "distance": "9-12",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Increase your weekly long run by 1 mile. Run at a conversational pace.",
                     "tip": ""
                 }
             ]
         },
         {
             "week": 4,
-            "headnote": "Week 4 continues with 5-7 days of running during which you will aim to increase your weekly long run by 1 mile and add 1 additional repeat to the hill workout. This is the last week of hill repeats and fartlek runs. New speed workouts begin next week.",
+            "headnote": "Week 4 continues with 5-7 days. Your goal is to increase your weekly long run by 1 mile and add 1 additional repeat to the hill workout. This is the last week of hill repeats and fartlek runs. New speed workouts begin next week.",
             "footnote": "Congratulations! You have just completed your first month of training. Six weeks to go before the race. Remember to stay hydrated before, during, and after your runs, even in cold weather.", 
             "days": [
                 {
@@ -207,7 +207,7 @@
                 {
                     "day": "Tuesday",
                     "workoutType": "Speed workout",
-                    "distance": "",
+                    "distance": "4-7",
                     "workoutOverview": "Hills, 8-10x",
                     "workoutDetails": "Find a hill 200-400 meters long. \n Warmup: Easy 1 mile \n Hills: Surge up the hill, keeping arms relaxed. Jog down, and repeat 8-10 times. \n Cooldown: Easy 1 mile",
                     "tip": ""
@@ -699,8 +699,8 @@
     "intermediate": [
         {
             "week": 1,
-            "headnote": "",
-            "footnote": "Don't be surprised if the first week was somewhat difficult, especially if you haven't been running.", 
+            "headnote": "Congratulations on starting you training! This program consists of 4-5 days per week of running, including 1 long run and 1 speed session per week, with your distance gradually increasing. Rest days are built in to let your body recover and assimilate your training.",
+            "footnote": "Congratulations on completing your first week of training! Don't be surprised if the first week was somewhat difficult, especially if you haven't been running.", 
             "days": [
                 {
                     "day": "Monday",
@@ -713,7 +713,7 @@
                 {
                     "day": "Tuesday",
                     "workoutType": "Easy recovery",
-                    "distance": "",
+                    "distance": "2-5",
                     "workoutOverview": "",
                     "workoutDetails": "",
                     "tip": "Stretch after every run. Don't stretch before running with cold muscles."
@@ -729,7 +729,7 @@
                 {
                     "day": "Thursday",
                     "workoutType": "Easy recovery",
-                    "distance": "",
+                    "distance": "2-5",
                     "workoutOverview": "",
                     "workoutDetails": "",
                     "tip": "For safety reasons, don't wear earbuds or headphones when running in an isolated area or on a road with traffic. Be aware of your surroundings at all times. If running on the road, run towards traffic and stay alert for oncoming vehicles. Remember that cars don't always honor the right of way."
@@ -745,15 +745,15 @@
                 {
                     "day": "Saturday",
                     "workoutType": "Easy recovery",
-                    "distance": "",
+                    "distance": "3-5",
                     "workoutOverview": "",
                     "workoutDetails": "",
-                    "tip": "If you are running on a windy day, try to plan your route so you are running into the wind at the start of your run. This way you will be running with the wind at the end."
+                    "tip": "If you are running on a windy day, try to plan your route so you are running into the wind at the start of your run. This way you'll be running with the wind at the end."
                 },
                 {
                     "day": "Sunday",
                     "workoutType": "Long run",
-                    "distance": "4-7",
+                    "distance": "5-7",
                     "workoutOverview": "",
                     "workoutDetails": "",
                     "tip": "If you are running on a treadmill, adjust the elevation to 1.0 to account for the wind resistance when running outdoors."
@@ -808,8 +808,8 @@
                 {
                     "day": "Saturday",
                     "workoutType": "Easy recovery",
-                    "distance": "",
-                    "workoutOverview": "3-5",
+                    "distance": "3-5",
+                    "workoutOverview": "",
                     "workoutDetails": "",
                     "tip": "Be careful running on ice and snow. Run with short, choppy strides to stay balanced and avoid slipping or falling. Remember to run into the wind at the start of your run so you will be running with the wind at the end."
                 },
@@ -839,7 +839,7 @@
                 {
                     "day": "Tuesday",
                     "workoutType": "Easy recovery",
-                    "distance": "3-6",
+                    "distance": "3-5",
                     "workoutOverview": "",
                     "workoutDetails": "Don't be surprised if your legs are still tired from Sunday's long run. ",
                     "tip": "Stretch after every run. Don't stretch before running with cold muscles."
@@ -910,7 +910,7 @@
                 {
                     "day": "Wednesday",
                     "workoutType": "Speed workout",
-                    "distance": "4-6",
+                    "distance": "5-7",
                     "workoutOverview": "Intervals, 15 sec / 45 sec, 2-3 miles",
                     "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace for 15 seconds (THIS IS NOT A SPRINT!), jog for 45 seconds, and repeat until you have run 2-3 miles. \n Cooldown: Easy 1 mile \n If you only ran 1-2 miles of intervals last week, try adding an additional mile of intervals this week. You should not be huffing and puffing or be out of breath during this workout. If you are, you may be running too hard. The purpose of this workout is to work on leg turnover and prepare you for the next few weeks when you will be running at a fast pace for a longer distance.",
                     "tip": ""
@@ -1394,8 +1394,8 @@
     "beginner": [
         {
             "week": 1,
-            "headnote": "",
-            "footnote": "", 
+            "headnote": "Congratulations on starting you training! This training program consists of walk-runs, where you alternate between running and short walking breaks. After the first month, you'll add in non-stop runs, long runs, and speed sessions. Each week includes at least a couple of rest days. These are very important to give your body time to recover.",
+            "footnote": "Congratulations on completing your first week of training!", 
             "days": [
                 {
                     "day": "Monday",
@@ -1407,15 +1407,15 @@
                 },
                 {
                     "day": "Tuesday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutType": "Run-walk",
+                    "distance": "24",
+                    "workoutOverview": "1 min / 5 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 5 minutes. Repeat 4 times.",
+                    "tip": "Stretch after every run. Don't stretch before running with cold muscles."
                 },
                 {
                     "day": "Wednesday",
-                    "workoutType": "",
+                    "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
                     "workoutDetails": "",
@@ -1423,15 +1423,15 @@
                 },
                 {
                     "day": "Thursday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutType": "Run-walk",
+                    "distance": "24",
+                    "workoutOverview": "1 min / 5 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 5 minutes. Repeat 4 times.",
+                    "tip": "For safety reasons, don't wear earbuds or headphones when running in an isolated area or on a road with traffic. Be aware of your surroundings at all times. If running on the road, run towards traffic and stay alert for oncoming vehicles. Remember that cars don't always honor the right of way."
                 },
                 {
                     "day": "Friday",
-                    "workoutType": "",
+                    "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
                     "workoutDetails": "",
@@ -1439,25 +1439,25 @@
                 },
                 {
                     "day": "Saturday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutType": "Run-walk",
+                    "distance": "32",
+                    "workoutOverview": "1 min / 7 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 7 minutes. Repeat 4 times.",
+                    "tip": "If you are running on a windy day, try to plan your route so you are running into the wind at the start of your run. This way you'll be running with the wind at the end."
                 },
                 {
                     "day": "Sunday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Run-walk",
+                    "distance": "22",
+                    "workoutOverview": "1 min / 10 min, 2x",
+                    "workoutDetails": "Walk 1 minute, run 10 minutes. Repeat 2 times.",
                     "tip": ""
                 }
             ]
         },
         {
             "week": 2,
-            "headnote": "",
+            "headnote": "Week 2 continues with walk-runs and a few rest days. The walk-runs have more time between walking breaks.",
             "footnote": "", 
             "days": [
                 {
@@ -1466,19 +1466,19 @@
                     "distance": "",
                     "workoutOverview": "",
                     "workoutDetails": "",
-                    "tip": ""
+                    "tip": "Staying hydrated during training, even on rest days, is very important."
                 },
                 {
                     "day": "Tuesday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutType": "Run-walk",
+                    "distance": "28",
+                    "workoutOverview": "1 min / 6 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 6 minutes. Repeat 4 times.",
+                    "tip": "When running in cold weather, wear multiple light layers instead of 1 heavy layer. You lose a lot of heat through your head and hands, so be sure to wear a hat and gloves."
                 },
                 {
                     "day": "Wednesday",
-                    "workoutType": "",
+                    "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
                     "workoutDetails": "",
@@ -1486,41 +1486,41 @@
                 },
                 {
                     "day": "Thursday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutType": "Run-walk",
+                    "distance": "28",
+                    "workoutOverview": "1 min / 6 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 6 minutes. Repeat 4 times.",
+                    "tip": "When running in the dark, wear reflective clothing, including a reflective vest."
                 },
                 {
                     "day": "Friday",
-                    "workoutType": "",
+                    "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
                     "workoutDetails": "",
-                    "tip": ""
+                    "tip": "Read a book on sports nutrition and think about some ways to improve your diet. Start by cutting down on junk food, sugar, and alcohol."
                 },
                 {
                     "day": "Saturday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutType": "Run-walk",
+                    "distance": "40",
+                    "workoutOverview": "1 min / 9 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 9 minutes. Repeat 4 times.",
+                    "tip": "Be careful running on ice and snow. Run with short, choppy strides to stay balanced and avoid slipping or falling. Remember to run into the wind at the start of your run so you will be running with the wind at the end."
                 },
                 {
                     "day": "Sunday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Run-walk",
+                    "distance": "26",
+                    "workoutOverview": "1 min / 12 min, 2x",
+                    "workoutDetails": "Walk 1 minute, run 12 minutes. Repeat 2 times.",
                     "tip": ""
                 }
             ]
         },
         {
             "week": 3,
-            "headnote": "",
+            "headnote": "Week 3 continues with walk-runs, with more time between walking breaks and 1 less rest day.",
             "footnote": "", 
             "days": [
                 {
@@ -1533,31 +1533,31 @@
                 },
                 {
                     "day": "Tuesday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Run-walk",
+                    "distance": "36",
+                    "workoutOverview": "1 min / 8 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 8 minutes. Repeat 4 times.",
                     "tip": ""
                 },
                 {
                     "day": "Wednesday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Run-walk",
+                    "distance": "21",
+                    "workoutOverview": "1 min / 6 min, 3x",
+                    "workoutDetails": "Walk 1 minute, run 6 minutes. Repeat 3 times.",
                     "tip": ""
                 },
                 {
                     "day": "Thursday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Run-walk",
+                    "distance": "36",
+                    "workoutOverview": "1 min / 8 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 8 minutes. Repeat 4 times.",
                     "tip": ""
                 },
                 {
                     "day": "Friday",
-                    "workoutType": "",
+                    "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
                     "workoutDetails": "",
@@ -1565,25 +1565,25 @@
                 },
                 {
                     "day": "Saturday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Run-walk",
+                    "distance": "44",
+                    "workoutOverview": "1 min / 10 min, 4x",
+                    "workoutDetails": "Walk 1 minute, run 10 minutes. Repeat 4 times.",
                     "tip": ""
                 },
                 {
                     "day": "Sunday",
-                    "workoutType": "",
-                    "distance": "",
-                    "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutType": "Run-walk",
+                    "distance": "26",
+                    "workoutOverview": "1 min / 12 min, 2x",
+                    "workoutDetails": "Walk 1 minute, run 12 minutes. Repeat 2 times.",
                     "tip": ""
                 }
             ]
         },
         {
             "week": 4,
-            "headnote": "In week 4, your longest walk-run is 48 minutes, with longer distances between walking breaks or none at all. Don't worry about the walk-run approach, soon you will be running non-stop. You may feel like you are working harder, and you are!",
+            "headnote": "Week 4 continues with walk-runs, with more time between walking breaks or none at all. Don't worry about the walk-run approach, soon you will be running non-stop. You may feel like you are working harder, and you are!",
             "footnote": "You finished your first month of training. 6 weeks to go before the race. If you have followed the first 4 weeks of training, you are on target to run the entire 10 miles on race day.", 
             "days": [
                 {
@@ -1709,8 +1709,8 @@
         },
         {
             "week": 6,
-            "headnote": "Week 6 includes some longer non-stop runs as well as 2 long walk-runs. There is also 1 anaerobic interval day designed to build up your anaerobic threshold, which helps make you faster. Things should start coming together for you if you have been following the program. Now that you are starting to run longer, you may want to start using a sports watch to help with your training. Besides calculating your time, distance, and pace, sports watches record other bio-metric data such as how much sleep you need.",
-            "footnote": "", 
+            "headnote": "Week 6 includes some longer non-stop runs as well as 2 long walk-runs. There is also 1 anaerobic interval day designed to build up your anaerobic threshold, which helps make you faster. Things should start coming together for you if you have been following the program.",
+            "footnote": "Now that you are starting to run longer, you may want to start using a sports watch to help with your training. Besides calculating your time, distance, and pace, sports watches record other bio-metric data such as how much sleep you need.", 
             "days": [
                 {
                     "day": "Monday",
