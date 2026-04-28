@@ -2,10 +2,12 @@
     --oatmeal: #f4f2f0;
     --oatmeal-darker: #e9e6e2;
     --soft-black: #404040;
+    --softer-black: #636363;
     --teal: #64b4b4;
     --teal-darker: #4b9b9b;
     --navy: #464f6d;
     --navy-lighter: #c5c9d3;
+    --navy-lightest: #d3d6de;
     --warning-yellow: #ffd24d;
 }
 
@@ -25,7 +27,7 @@ hr {
 /* Inputs */
 .container select,
 .container input {
-    background-color: var(--navy-lighter);
+    background-color: var(--navy-lightest);
     border: 1px solid var(--soft-black);
     border-radius: 4px;
 }
@@ -73,6 +75,10 @@ hr {
 }
 .week-card {
     background-color: var(--navy-lighter);
+}
+.week-card .card-body .headnote,
+.week-card .card-body .footnote {
+    color: var(--softer-black) !important;
 }
 
 .day-card {

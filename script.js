@@ -113,10 +113,18 @@ fetch("training-plan.json")
             const footnoteHTML = node.querySelector(".footnote");
             const daysContainer = node.querySelector(".days");
 
+            // Get some variables
+            const hasFootnote = json.footnote && json.footnote.trim() !== "";
+
             // Populate HTML sections
             weekNumberHTML.textContent = json.week;
             headnoteHTML.textContent = json.headnote;
-            footnoteHTML.textContent = json.footnote;
+            // footnoteHTML.textContent = json.footnote;
+            if (hasFootnote) {
+                footnoteHTML.textContent = json.footnote;
+            } else {
+                footnoteHTML.classList.add("d-none");
+            }
 
             // Populate HTML for the days container
             json.days.forEach(dayJson => {
