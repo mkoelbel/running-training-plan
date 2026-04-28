@@ -748,7 +748,7 @@
                     "distance": "3-5",
                     "workoutOverview": "",
                     "workoutDetails": "",
-                    "tip": "If you are running on a windy day, try to plan your route so you are running into the wind at the start of your run. This way you'll be running with the wind at the end."
+                    "tip": "If you are running on a windy day, try to plan your route so you're running into the wind at the start of your run. This way you'll be running with the wind at the end."
                 },
                 {
                     "day": "Sunday",
@@ -1443,7 +1443,7 @@
                     "distance": "32",
                     "workoutOverview": "1 min / 7 min, 4x",
                     "workoutDetails": "Walk 1 minute, run 7 minutes. Repeat 4 times.",
-                    "tip": "If you are running on a windy day, try to plan your route so you are running into the wind at the start of your run. This way you'll be running with the wind at the end."
+                    "tip": "If you are running on a windy day, try to plan your route so you're running into the wind at the start of your run. This way you'll be running with the wind at the end."
                 },
                 {
                     "day": "Sunday",
@@ -1457,7 +1457,7 @@
         },
         {
             "week": 2,
-            "headnote": "Week 2 continues with walk-runs and a few rest days. The walk-runs have more time between walking breaks.",
+            "headnote": "Week 2 continues with walk-runs and a few rest days. The walk-runs have longer periods of running.",
             "footnote": "", 
             "days": [
                 {
@@ -1520,7 +1520,7 @@
         },
         {
             "week": 3,
-            "headnote": "Week 3 continues with walk-runs, with more time between walking breaks and 1 less rest day.",
+            "headnote": "Week 3 continues with walk-runs, with longer periods of running and 1 less rest day.",
             "footnote": "", 
             "days": [
                 {
@@ -1583,7 +1583,7 @@
         },
         {
             "week": 4,
-            "headnote": "Week 4 continues with walk-runs, with more time between walking breaks or none at all. Don't worry about the walk-run approach, soon you will be running non-stop. You may feel like you are working harder, and you are!",
+            "headnote": "Week 4 continues with walk-runs, with longer periods of running, or optionally non-stop running. Don't worry about the walk-run approach, soon you will be running non-stop. You may feel like you are working harder, and you are!",
             "footnote": "You finished your first month of training. 6 weeks to go before the race. If you have followed the first 4 weeks of training, you are on target to run the entire 10 miles on race day.", 
             "days": [
                 {
@@ -1710,7 +1710,7 @@
         {
             "week": 6,
             "headnote": "Week 6 includes some longer non-stop runs as well as 2 long walk-runs. There is also 1 anaerobic interval day designed to build up your anaerobic threshold, which helps make you faster. Things should start coming together for you if you have been following the program.",
-            "footnote": "Now that you are starting to run longer, you may want to start using a sports watch to help with your training. Besides calculating your time, distance, and pace, sports watches record other bio-metric data such as how much sleep you need.", 
+            "footnote": "", 
             "days": [
                 {
                     "day": "Monday",
@@ -1734,7 +1734,7 @@
                     "distance": "33",
                     "workoutOverview": "",
                     "workoutDetails": "33 minutes of non-stop running. If you can finish this run without stopping, you are on your way to being able to finish the 10 mile race.",
-                    "tip": ""
+                    "tip": "Now that you are starting to run longer, you may want to start using a sports watch to help with your training. Besides calculating your time, distance, and pace, sports watches record other bio-metric data such as how much sleep you need."
                 },
                 {
                     "day": "Thursday",
@@ -1835,7 +1835,7 @@
         },
         {
             "week": 8,
-            "headnote": "Week 8 has several long runs with 1 set of back-to-back long runs. These runs are more important than the shorter 40-minute runs, so if you need to skip a day, it should be a 40-minute run. You can always adjust the days of the long runs, as long as you don't do 3 consecutive long runs. Don't worry if you need to take a short break during the long runs - use the break to hydrate. This is essentially what you do when you stop at one of the water of Gatorade stations during the race.",
+            "headnote": "Week 8 has several long runs with 1 set of back-to-back long runs. These long runs are more important than the shorter 40-minute runs, so if you need to skip a day, it should be a 40-minute run. You can always adjust the days of the long runs, as long as you don't do 3 consecutive long runs. Don't worry if you need to take a short break during the long runs - use the break to hydrate. This is essentially what you do when you stop at one of the water of Gatorade stations during the race.",
             "footnote": "", 
             "days": [
                 {
@@ -1914,7 +1914,7 @@
                     "workoutType": "Easy recovery",
                     "distance": "40",
                     "workoutOverview": "",
-                    "workoutDetails": "Keep your pace easy conversational. Stop for water or a sports drink if you are thirsty. If you are still feeling tired from Sunday's long run, take today off.",
+                    "workoutDetails": "Keep your pace easy and conversational. Stop for water or a sports drink if you are thirsty. If you are still feeling tired from Sunday's long run, take today off.",
                     "tip": ""
                 },
                 {
@@ -1961,7 +1961,7 @@
         },
         {
             "week": 10,
-            "headnote": "This is a taper week with very little running. The hard training is over. Your goal is to feel strong and ready to go on race day. Keep hydrating, get plenty of rest, and start carb-loading during the week. Fight the temptation to run hard, as you may be feeling frisky by the end of the week. If you missed some runs, now is not the time to cram extra miles in.",
+            "headnote": "This is a taper week with very little running. The hard training is over. Your goal is to feel strong and ready to go on race day. Keep hydrating, get plenty of rest, and start carb-loading during the week. Fight the temptation to run hard, as you may be feeling frisky by the end of the week. If you missed some runs, now is not the time to cram in extra miles.",
             "footnote": "", 
             "days": [
                 {
