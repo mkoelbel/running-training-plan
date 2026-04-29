@@ -4,7 +4,7 @@
     "advanced": [
         {
             "week": 1,
-            "headnote": "Congratulations on starting you training! This advanced training program is designed for runners who consistently run 20-25 miles per week with a weekly long run. The program consists of 5-7 days of running per week, including 1 long run and 2 speed sessions, with mileage gradually increasing. Speed sessions vary over the course of the program, and consist of hills, fartlek runs, intervals, and anaerobic threshold runs. Rest days are built in to let your body recover and assimilate your training.",
+            "headnote": "Congratulations on starting your training! This advanced training program is designed for runners who consistently run 20-25 miles per week with a weekly long run. The program consists of 5-7 days of running per week, including 1 long run and 2 speed sessions, with mileage gradually increasing. Speed sessions vary over the course of the program, and consist of hills, fartlek runs, intervals, and anaerobic threshold runs. Rest days are built in to let your body recover and assimilate your training.",
             "footnote": "Congratulations on completing your first week of training!", 
             "days": [
                 {
@@ -477,7 +477,7 @@
                     "workoutType": "Speed workout",
                     "distance": "5-8",
                     "workoutOverview": "Anaerobic threshold, 20-25 min",
-                    "workoutDetails": "Warmup: Easy 1 mile \n Anaerobic threshold: Run at race pace for 20-25 minutes. Try to stay between 80-85% of you maximum heart rate for the entire 20-25 minutes. The effort should be quite hard - you should feel like you could keep going for a long time, but if you picked up the pace you would want to stop. \n Cooldown: Easy 1 mile \n You should feel terrific within 30 minutes of completing the workout.",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Anaerobic threshold: Run at race pace for 20-25 minutes. Try to stay between 80-85% of your maximum heart rate for the entire 20-25 minutes. The effort should be quite hard - you should feel like you could keep going for a long time, but if you picked up the pace you would want to stop. \n Cooldown: Easy 1 mile \n You should feel terrific within 30 minutes of completing the workout.",
                     "tip": ""
                 },
                 {
@@ -699,7 +699,7 @@
     "intermediate": [
         {
             "week": 1,
-            "headnote": "Congratulations on starting you training! This intermediate training program is designed for runners who consistently run 15-20 miles per week. The program consists of 4-5 days of running per week, including 1 long run and 1 speed session per week. Mileage and intensity gradually increase to build strength, endurance, and confidence. Rest days are built in to let your body recover and assimilate your training.",
+            "headnote": "Congratulations on starting your training! This intermediate training program is designed for runners who consistently run 15-20 miles per week. The program consists of 4-5 days of running per week, including 1 long run and 1 speed session per week. Mileage and intensity gradually increase to build strength, endurance, and confidence. Rest days are built in to let your body recover and assimilate your training.",
             "footnote": "Congratulations on completing your first week of training! Don't be surprised if the first week was somewhat difficult, especially if you haven't been running.", 
             "days": [
                 {
@@ -921,7 +921,7 @@
                     "distance": "3-5",
                     "workoutOverview": "",
                     "workoutDetails": "Easy jog to recover from yesterday's workout.",
-                    "tip": "Always maintain a conversational pace when running on a recovery day. Keep the effort at 60-70% of your maximum heart rate, or 90-120 seconds per mile slower than you race pace."
+                    "tip": "Always maintain a conversational pace when running on a recovery day. Keep the effort at 60-70% of your maximum heart rate, or 90-120 seconds per mile slower than your race pace."
                 },
                 {
                     "day": "Friday",
@@ -1101,7 +1101,7 @@
                     "workoutType": "Speed workout",
                     "distance": "5-7",
                     "workoutOverview": "Intervals, 2 min / 2 min, 9x / 36 min",
-                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Run 2 minutes hard, then jog for 2 minutes. \n Cooldown: Easy 1 mile \n The 2-minute hard segments are NOT A SPRINT. Instead, try to stay relaxed while working a bit harder. Try to run at your race effort (80-85% of your maximum heart rate). The effort should be somewhat difficult and involve some huffing and puffing, expecially at the end of the workout.",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Run 2 minutes hard, then jog for 2 minutes. \n Cooldown: Easy 1 mile \n The 2-minute hard segments are NOT A SPRINT. Instead, try to stay relaxed while working a bit harder. Try to run at your race effort (80-85% of your maximum heart rate). The effort should be somewhat difficult and involve some huffing and puffing, especially at the end of the workout.",
                     "tip": ""
                 },
                 {
@@ -1394,7 +1394,7 @@
     "beginner": [
         {
             "week": 1,
-            "headnote": "Congratulations on starting you training! This beginner training program is designed for people who are just discovering running, or who are returning to a more regular running schedule. The program begins with a walk-run approach, giving your body time to adapt while building endurance. As the weeks progress, you'll gradually increase your running intervals and shorten your walking breaks. Don't worry about pace - focus on running for the recommended duration, not on how fast or far you go. After the first month, you'll add in non-stop runs, long runs, and speed sessions. Each week includes at least a couple of rest days - these are very important to give your body time to recover.",
+            "headnote": "Congratulations on starting your training! This beginner training program is designed for people who are just discovering running, or who are returning to a more regular running schedule. The program begins with a walk-run approach, giving your body time to adapt while building endurance. As the weeks progress, you'll gradually increase your running intervals and shorten your walking breaks. Don't worry about pace - focus on running for the recommended duration, not on how fast or far you go. After the first month, you'll add in non-stop runs, long runs, and speed sessions. Each week includes at least a couple of rest days - these are very important to give your body time to recover.",
             "footnote": "Congratulations on completing your first week of training!", 
             "days": [
                 {
@@ -2017,7 +2017,7 @@
                     "workoutType": "RACE DAY",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "Run easy for the first 10-15 minutes. Avoid starting out too fast and zigzagging around other runners at the start whent the course is crowded. The few seconds you save may cost you minutes at the end of the race due to expending needless energy. Slowly pick up your pace until you're at your goal race pace by the end of the first mile. Try to run steady and comfortably. You can always pick up the pace for the last few miles. GOOD LUCK!",
+                    "workoutDetails": "Run easy for the first 10-15 minutes. Avoid starting out too fast and zigzagging around other runners at the start when the course is crowded. The few seconds you save may cost you minutes at the end of the race due to expending needless energy. Slowly pick up your pace until you're at your goal race pace by the end of the first mile. Try to run steady and comfortably. You can always pick up the pace for the last few miles. GOOD LUCK!",
                     "tip": ""
                 }
             ]
