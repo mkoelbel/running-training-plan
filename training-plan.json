@@ -4,23 +4,23 @@
     "advanced": [
         {
             "week": 1,
-            "headnote": "Congratulations on starting you training! This program consists of 5-7 days per week of running, including 1 long run and 2 speed sessions per week, with your distance gradually increasing. Speed sessions vary over the course of the program, and consist of hills, fartlek runs, intervals, and anaerobic threshold runs. Rest days are built in to let your body recover and assimilate your training.",
+            "headnote": "Congratulations on starting you training! This advanced training program is designed for runners who consistently run 20-25 miles per week with a weekly long run. The program consists of 5-7 days of running per week, including 1 long run and 2 speed sessions per week, with your distance gradually increasing. Speed sessions vary over the course of the program, and consist of hills, fartlek runs, intervals, and anaerobic threshold runs. Rest days are built in to let your body recover and assimilate your training.",
             "footnote": "Congratulations on completing your first week of training!", 
             "days": [
                 {
                     "day": "Monday",
-                    "workoutType": "Rest day",
-                    "distance": "",
+                    "workoutType": "Easy recovery",
+                    "distance": "4-6",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutDetails": "Run at an easy, conversational pace, 90-120 seconds slower than your race pace, or 60-70% of your maximum heart rate.",
+                    "tip": "To determine your training heart rate zones, use the Karvonen Formula (google it)."
                 },
                 {
                     "day": "Tuesday",
                     "workoutType": "Speed workout",
-                    "distance": "3-6",
-                    "workoutOverview": "Hills, 5-7x",
-                    "workoutDetails": "Find a hill 200-400 meters long. \n Warmup: Easy 1 mile \n Hills: Surge up the hill, keeping arms relaxed. Jog down, and repeat 5-7 times. \n Cooldown: Easy 1 mile",
+                    "distance": "4-6",
+                    "workoutOverview": "Hills, 6x",
+                    "workoutDetails": "Find a hill 200-400 meters long. \n Warmup: Easy 1 mile \n Hills: Surge up the hill, keeping arms relaxed. Jog down, and repeat 6 times. \n Cooldown: Easy 1 mile",
                     "tip": ""
                 },
                 {
@@ -28,13 +28,13 @@
                     "workoutType": "Easy recovery",
                     "distance": "4-6",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutDetails": "Optional rest day \n Run at an easy, conversational pace, 90-120 seconds slower than your race pace, or 60-70% of your maximum heart rate. This slower pace allows your body to repair itself from yesterday's hard workout. \n If cross training (weight lifting, cycling, yoga, etc) is part of your weekly routine, you may want to replace this recovery run with cross training, as long as the workout isn't a hard effort.",
+                    "tip": "Check your running shoes and ensure they're not excessively worn."
                 },
                 {
                     "day": "Thursday",
                     "workoutType": "Speed workout",
-                    "distance": "5-8",
+                    "distance": "5-7",
                     "workoutOverview": "Intervals, 1-2-3-4-5-6",
                     "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace to race pace (not a sprint) for 1 minute, jog 1 minute, pick up the pace for 2 minutes, jog 1 minute, pick up the pace for 3 minutes, jog 1 minute, etc, until you work up to 6 minutes. \n Cooldown: Easy 1 mile",
                     "tip": ""
@@ -44,30 +44,30 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutDetails": "Optional easy recovery run of 3-6 miles",
+                    "tip": "Rest days are an important part of the training schedule to help your body recover and keep you fresh for your long runs and speed sessions. You may want to use the rest day to do moderate upper body weight work. Upper body strength can aid your running form and strengthen your muscles."
                 },
                 {
                     "day": "Saturday",
                     "workoutType": "Easy recovery",
-                    "distance": "4-7",
+                    "distance": "5-7",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutDetails": "Keep this run at 60-70% effort.",
+                    "tip": "If you've increased your distance or intensity during this first week of training, it's completely normal to feel some stiffness and soreness over the next few days. This is a typical response to new training stress and should ease as your body adapts."
                 },
                 {
                     "day": "Sunday",
                     "workoutType": "Long run",
-                    "distance": "7-10",
+                    "distance": "8-12",
                     "workoutOverview": "",
-                    "workoutDetails": "Increase your weekly long run by 1 mile. Run at a conversational pace.",
-                    "tip": ""
+                    "workoutDetails": "Run at 60-70% effort.",
+                    "tip": "The long run is one of the key elements of this training program. Long runs should be at an easy, conversational effort, 60-70% of your maximum heart rate, or 90-120 seconds slower than your race pace. Remember to stay hydrated."
                 }
             ]
         },
         {
             "week": 2,
-            "headnote": "Week 2 continues with 5-7 days of running. Your goal is to increase your long run by 1 mile and add 1 additional repeat to the hill workout.",
+            "headnote": "Week 2 continues with 5-7 days of running, including a long run and 2 speed sessions. Your goal is to increase your long run by 1 mile.",
             "footnote": "", 
             "days": [
                 {
@@ -75,13 +75,13 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutDetails": "Optional easy recovery run of 4-6 miles",
+                    "tip": "Consider yoga or pilates to increase flexibility and core strength."
                 },
                 {
                     "day": "Tuesday",
                     "workoutType": "Speed workout",
-                    "distance": "3-6",
+                    "distance": "4-7",
                     "workoutOverview": "Hills, 6-8x",
                     "workoutDetails": "Find a hill 200-400 meters long. \n Warmup: Easy 1 mile \n Hills: Surge up the hill, keeping arms relaxed. Jog down, and repeat 6-8 times. \n Cooldown: Easy 1 mile",
                     "tip": ""
@@ -92,14 +92,14 @@
                     "distance": "4-6",
                     "workoutOverview": "",
                     "workoutDetails": "",
-                    "tip": ""
+                    "tip": "When running in cold weather, wear multiple light layers instead of 1 heavy layer. You lose a lot of heat through your head and hands, so be sure to wear a hat and gloves."
                 },
                 {
                     "day": "Thursday",
                     "workoutType": "Speed workout",
-                    "distance": "5-8",
-                    "workoutOverview": "Intervals, 1-2-3-4-5-6",
-                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace to race pace (not a sprint) for 1 minute, jog 1 minute, pick up the pace for 2 minutes, jog 1 minute, pick up the pace for 3 minutes, jog 1 minute, etc, until you work up to 6 minutes. \n Cooldown: Easy 1 mile",
+                    "distance": "5-7",
+                    "workoutOverview": "Intervals, 1-2-3-4-5-6-7",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace to race pace (not a sprint) for 1 minute, jog 1 minute, pick up the pace for 2 minutes, jog 1 minute, pick up the pace for 3 minutes, jog 1 minute, etc, until you work up to 7 minutes. \n Cooldown: Easy 1 mile",
                     "tip": ""
                 },
                 {
@@ -107,23 +107,23 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutDetails": "Optional easy recovery run of 4-6 miles",
+                    "tip": "Read a book on sports nutrition and think about some ways to improve your diet. Start by cutting down on junk food, sugar, and alcohol."
                 },
                 {
                     "day": "Saturday",
                     "workoutType": "Easy recovery",
-                    "distance": "4-7",
+                    "distance": "5-8",
                     "workoutOverview": "",
                     "workoutDetails": "",
-                    "tip": ""
+                    "tip": "Remember that every step you take while running is a commitment to yourself and your goals. Use this run to celebrate what you love about running. Let the miles remind you that progress is built on consistency, courage, and connection. Run with gratitude, purpose, and heart. You're stronger than you think, and every mile is proof."
                 },
                 {
                     "day": "Sunday",
                     "workoutType": "Long run",
-                    "distance": "8-11",
+                    "distance": "9-12",
                     "workoutOverview": "",
-                    "workoutDetails": "Increase your weekly long run by 1 mile.",
+                    "workoutDetails": "Increase last week's long run by 1 mile. Your pace should be 90-120 seconds slower than race pace, or 60-70% effort.",
                     "tip": ""
                 }
             ]
@@ -138,8 +138,8 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutDetails": "Optional easy recovery run of 4-6 miles",
+                    "tip": "Rest days are an important part of the training program. They help your body assimilate the gains from your hard training days."
                 },
                 {
                     "day": "Tuesday",
@@ -152,17 +152,17 @@
                 {
                     "day": "Wednesday",
                     "workoutType": "Easy recovery",
-                    "distance": "4-7",
+                    "distance": "5-7",
                     "workoutOverview": "",
                     "workoutDetails": "",
-                    "tip": ""
+                    "tip": "For safety reasons, don't wear earbuds or headphones when running in an isolated area or on a road with traffic. Be aware of your surroundings at all times."
                 },
                 {
                     "day": "Thursday",
                     "workoutType": "Speed workout",
                     "distance": "5-8",
                     "workoutOverview": "Intervals, 1-2-3-4-5-6",
-                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace to race pace (not a sprint) for 1 minute, jog 1 minute, pick up the pace for 2 minutes, jog 1 minute, pick up the pace for 3 minutes, jog 1 minute, etc, until you work up to 6 minutes. If you feel good, try to run 7 minutes at race pace. \n Cooldown: Easy 1 mile",
+                    "workoutDetails": "Warmup: Easy 1 mile \n Intervals: Pick up the pace to race pace (not a sprint) for 1 minute, jog 1 minute, pick up the pace for 2 minutes, jog 1 minute, pick up the pace for 3 minutes, jog 1 minute, etc, until you work up to 6 minutes. \n Cooldown: Easy 1 mile",
                     "tip": ""
                 },
                 {
@@ -170,7 +170,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy recovery run of 5-7 miles",
                     "tip": ""
                 },
                 {
@@ -179,7 +179,7 @@
                     "distance": "5-8",
                     "workoutOverview": "",
                     "workoutDetails": "",
-                    "tip": ""
+                    "tip": "If running on the road with traffic, always run towards traffic and stay alert for oncoming vehicles. Remember that cars don't always honor the right of way."
                 },
                 {
                     "day": "Sunday",
@@ -187,13 +187,13 @@
                     "distance": "9-12",
                     "workoutOverview": "",
                     "workoutDetails": "Increase your weekly long run by 1 mile. Run at a conversational pace.",
-                    "tip": ""
+                    "tip": "Staying hydrated during a long run is very important, even in cold weather."
                 }
             ]
         },
         {
             "week": 4,
-            "headnote": "Week 4 continues with 5-7 days. Your goal is to increase your weekly long run by 1 mile and add 1 additional repeat to the hill workout. This is the last week of hill repeats and fartlek runs. New speed workouts begin next week.",
+            "headnote": "Week 4 continues with 5-7 days of training. Your goal is to increase your weekly long run by 1 mile and add 1 additional repeat to the hill workout. This is the last week of hill repeats and fartlek runs. New speed workouts begin next week.",
             "footnote": "Congratulations! You have just completed your first month of training. Six weeks to go before the race. Remember to stay hydrated before, during, and after your runs, even in cold weather.", 
             "days": [
                 {
@@ -201,7 +201,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy recovery run of 4-6 miles",
                     "tip": "As your fitness level improves, you may feel that rest days aren't as important. Resist this thought and enjoy the extra time (or sleep). If you want to stretch on your day off, first go for a walk to warm up your muscles. Never stretch cold muscles. Yoga or pilates will help increase flexibility."
                 },
                 {
@@ -217,7 +217,7 @@
                     "workoutType": "Easy recovery",
                     "distance": "4-7",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Make sure you're not running too hard every day. Keep your recovery days at 60-70% of your maximum heart rate.",
                     "tip": ""
                 },
                 {
@@ -233,7 +233,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy recovery run of 4-6 miles",
                     "tip": "Going for a walk or easy bike ride can help ease muscle tightness to prepare for the weekend's hard work."
                 },
                 {
@@ -264,7 +264,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy recovery run of 4-6 miles",
                     "tip": "Check your shoes for wear. It might be time to get a new pair. Many runners have 2 pairs and alternate between them. They always have a pair already broken in and a new pair they are breaking in. Most shoes wear out in the mid-sole after 300-500 miles, even though the bottom of the shoe may not appear worn."
                 },
                 {
@@ -296,7 +296,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy recovery run of 4-7 miles",
                     "tip": "Don't worry if your appetite is increasing. Your body needs more fuel due to increased mileage and intensity. You may need more complex carbs, including whole grains and vegetables."
                 },
                 {
@@ -319,7 +319,7 @@
         },
         {
             "week": 6,
-            "headnote": "Week 6 continues with 5-7 days of running including a weekly long run and 2 anaerobic threshold speed sessions. 4 more weeks of hard training are ahead.",
+            "headnote": "Week 6 continues with 5-7 days of running including a weekly long run and 2 speed sessions. 4 more weeks of hard training are ahead.",
             "footnote": "", 
             "days": [
                 {
@@ -327,7 +327,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy recovery run of 4-7 miles",
                     "tip": ""
                 },
                 {
@@ -367,7 +367,7 @@
                     "workoutType": "Easy recovery",
                     "distance": "5-7",
                     "workoutOverview": "",
-                    "workoutDetails": "Another easy recovery before Sunday's long run.",
+                    "workoutDetails": "Another easy recovery before Sunday's long run",
                     "tip": "Wear sunglasses with UV protection to keep your eyes safe on sunny days."
                 },
                 {
@@ -382,7 +382,7 @@
         },
         {
             "week": 7,
-            "headnote": "Week 7 continues with 5-7 days of running including a weekly long run and 2 anaerobic threshold speed sessions. This is a good week to test your fitness level with a race on this weekend or next - the race should replace the 20-25 minute threshold run.",
+            "headnote": "Week 7 continues with 5-7 days of running including a weekly long run and 2 anaerobic threshold speed sessions.",
             "footnote": "", 
             "days": [
                 {
@@ -390,7 +390,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy recovery run of 4-7 miles",
                     "tip": ""
                 },
                 {
@@ -453,8 +453,8 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": "If you feel tired from your training, you can always take an extra day off on Wednesday to let your body recover."
+                    "workoutDetails": "Optional easy recovery run of 4-7 miles",
+                    "tip": "If you feel tired from your training, you can always take an extra day off (skipping an easy run) let your body recover."
                 },
                 {
                     "day": "Tuesday",
@@ -485,7 +485,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy recovery run of 4-7 miles",
                     "tip": ""
                 },
                 {
@@ -516,7 +516,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy recovery run of 4-7 miles",
                     "tip": ""
                 },
                 {
@@ -548,7 +548,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy recovery run of 3-5 miles",
                     "tip": "Nothing you do today will make you faster on race day. Overtraining, however, can result in a bad race. You want to go into the race rested and frisky."
                 },
                 {
@@ -564,7 +564,7 @@
                     "workoutType": "Long run",
                     "distance": "6-9",
                     "workoutOverview": "",
-                    "workoutDetails": "Run 2-3 miles at predicted race pace at the end of the run. The more race pace miles you run, the more likely it is that you will be able to hold that pace for 10 miles.",
+                    "workoutDetails": "This is your last long run. Run 2-3 miles at predicted race pace at the end of the run. The more race pace miles you run, the more likely it is that you will be able to hold that pace for 10 miles.",
                     "tip": ""
                 }
             ]
@@ -579,8 +579,8 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": ""
+                    "workoutDetails": "Optional easy recovery run of 3-5 miles",
+                    "tip": "Remember that during a taper, your main goal is to be fully rested on race day."
                 },
                 {
                     "day": "Tuesday",
@@ -611,7 +611,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy recovery run of 3-4 miles",
                     "tip": ""
                 },
                 {
@@ -619,7 +619,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional easy jog of 15-20 minutes.",
                     "tip": "Eat a nice pasta dinner. Lay out your running gear and pin your number on your shirt."
                 },
                 {
@@ -642,7 +642,7 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Optional very short, easy run.",
                     "tip": ""
                 },
                 {
@@ -658,7 +658,7 @@
                     "workoutType": "Easy recovery",
                     "distance": "4-6",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Easy run at conversational pace.",
                     "tip": ""
                 },
                 {
@@ -674,7 +674,7 @@
                     "workoutType": "Easy recovery",
                     "distance": "4-6",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Easy run at conversational pace.",
                     "tip": ""
                 },
                 {
@@ -690,7 +690,7 @@
                     "workoutType": "Easy recovery",
                     "distance": "4-6",
                     "workoutOverview": "",
-                    "workoutDetails": "",
+                    "workoutDetails": "Easy run at conversational pace.",
                     "tip": ""
                 }
             ]
