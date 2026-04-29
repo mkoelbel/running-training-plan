@@ -627,8 +627,8 @@
                     "workoutType": "RACE DAY",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": "AVOID GOING OUT TOO FAST. Zigzagging around other runners at the start when the course is crowded is counter-productive. The few seconds you save at the beginning may cost you minutes at the end due to expending needless energy. Run easy for the first 10-15 minutes, and then slowly pick up your pace until you're at your goal race pace by the end of the first mile. Try to run steady and comfortably. You can always pick up the pace for the last few miles. GOOD LUCK!"
+                    "workoutDetails": "AVOID GOING OUT TOO FAST. Zigzagging around other runners at the start when the course is crowded is counter-productive. The few seconds you save at the beginning may cost you minutes at the end due to expending needless energy. Run easy for the first 10-15 minutes, and then slowly pick up your pace until you're at your goal race pace by the end of the first mile. Try to run steady and comfortably. You can always pick up the pace for the last few miles. GOOD LUCK!",
+                    "tip": ""
                 }
             ]
         },
@@ -723,8 +723,8 @@
                     "workoutType": "Rest day",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "Rest days are important to let your body recover. If cross training (weight lifting, cycling, yoga, etc) is part of your weekly routine, consider cutting back during this 10-week training program, especially in the second half of the program.",
-                    "tip": ""
+                    "workoutDetails": "",
+                    "tip": "Rest days are important to let your body recover. If cross training (weight lifting, cycling, yoga, etc) is part of your weekly routine, consider cutting back during this 10-week training program, especially in the second half of the program."
                 },
                 {
                     "day": "Thursday",
@@ -1322,8 +1322,8 @@
                     "workoutType": "RACE DAY",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": "Run easy for the first 10-15 minutes. AVOID GOING OUT TOO FAST. Zigzagging around other runners at the start when the course is crowded is counter-productive. The few seconds you save at the beginning may cost you minutes at the end due to expending needless energy. Slowly pick up your pace until you're at your goal race pace by the end of the first mile. Try to run steady and comfortably. You can always pick up the pace for the last few miles. GOOD LUCK!"
+                    "workoutDetails": "Run easy for the first 10-15 minutes. AVOID GOING OUT TOO FAST. Zigzagging around other runners at the start when the course is crowded is counter-productive. The few seconds you save at the beginning may cost you minutes at the end due to expending needless energy. Slowly pick up your pace until you're at your goal race pace by the end of the first mile. Try to run steady and comfortably. You can always pick up the pace for the last few miles. GOOD LUCK!",
+                    "tip": ""
                 }
             ]
         },
@@ -2017,8 +2017,8 @@
                     "workoutType": "RACE DAY",
                     "distance": "",
                     "workoutOverview": "",
-                    "workoutDetails": "",
-                    "tip": "Run easy for the first 10-15 minutes. Avoid starting out too fast and zigzagging around other runners at the start whent the course is crowded. The few seconds you save may cost you minutes at the end of the race due to expending needless energy. Slowly pick up your pace until you're at your goal race pace by the end of the first mile. Try to run steady and comfortably. You can always pick up the pace for the last few miles. GOOD LUCK!"
+                    "workoutDetails": "Run easy for the first 10-15 minutes. Avoid starting out too fast and zigzagging around other runners at the start whent the course is crowded. The few seconds you save may cost you minutes at the end of the race due to expending needless energy. Slowly pick up your pace until you're at your goal race pace by the end of the first mile. Try to run steady and comfortably. You can always pick up the pace for the last few miles. GOOD LUCK!",
+                    "tip": ""
                 }
             ]
         },
