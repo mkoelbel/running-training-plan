@@ -38,7 +38,7 @@ function init(json) {
     dom.levelInput.value = json.levelDefault;
     dom.startDateInput.value = json.startDateDefault;
 
-    // Render training plan for the selected level
+    // Render training plan
     getCurrentWeekAndRenderPlan(dom.startDateInput.value, dom.levelInput.value, json);
 
     // Event listeners
@@ -81,26 +81,26 @@ function renderPlan(level, weekNumToExpand, json) {
     // Clear the container
     dom.planContainer.innerHTML = "";
 
-    // Get the JSON section for the given level
+    // Get JSON section for the given level
     const planJson = json[level];
     if (!planJson) {
         console.error("Plan not found for level:", level);
         return;
     }
 
-    // Populate some HTML sections for the page
-    dom.level.textContent = level.toUpperCase();
+    // Render HTML
+    renderHtmlElement(dom.level, level.toUpperCase());
 
-    // Populate HTML for the training plan container
+    // Render HTML for training plan container
     let i = 1; // Keep track of weeks we're building so we know which week to expand
     planJson.forEach(weekJson => {
-        // Build the week HTML node
+        // Build HTML node
         const weekNode = renderWeek(weekJson)
         // If it's the week to expand, do that
         if (i == weekNumToExpand) {
             weekNode.querySelector("details").open = true;
         }
-        // Add the week node to the plan container
+        // Add node to container
         dom.planContainer.appendChild(weekNode);
         i++;
     });
@@ -124,23 +124,16 @@ function renderWeek(json) {
         daysContainer: $(node, ".days"),
     }
 
-    // Variables
-    const hasFootnote = json.footnote && json.footnote.trim() !== "";
-
     // Render HTML
-    week.number.textContent = json.week;
-    week.headnote.textContent = json.headnote;
-    if (hasFootnote) {
-        week.footnote.textContent = json.footnote;
-    } else {
-        week.footnote.classList.add("d-none");
-    }
+    renderHtmlElement(week.number, json.week.toString());
+    renderHtmlElement(week.headnote, json.headnote);
+    renderHtmlElement(week.footnote, json.footnote);
 
-    // Populate HTML for the days container
+    // Render HTML for days container
     json.days.forEach(dayJson => {
-        // Build the day HTML node
+        // Build HTML node
         const dayNode = renderDay(dayJson);
-        // Add it to the days container
+        // Add node to container
         week.daysContainer.appendChild(dayNode);
     });
     
@@ -170,35 +163,26 @@ function renderDay(json) {
     }
     day.tipText = $(day.tip, ".tip-text");
 
-    // Variables
+    // Constants
     const hasDistance = json.distance && parseFloat(json.distance) > 0;
-    const hasWorkoutOverviewOrDetails = (json.workoutOverview && json.workoutOverview.trim() !== "") || (json.workoutDetails && json.workoutDetails.trim() !== "");
-    const hasTip = json.tip && json.tip.trim() !== "";
-
     const distanceOrTimeUnit = (dom.levelInput.value == "beginner") ? "minutes" : "miles";
-    const workoutDetailsFormatted = json.workoutDetails
-        .split("\n")
-        .map(p => `<p>${p.trim()}</p>`)
-        .join("");
+    const hasWorkoutOverviewOrDetails = !textIsEmpty(json.workoutOverview) || !textIsEmpty(json.workoutDetails);
 
     // Render HTML
-    day.name.textContent = json.day;
-    day.workoutType.textContent = json.workoutType;
-
-    if (hasDistance) day.distance.textContent = ` (${json.distance} ${distanceOrTimeUnit})`;
-
+    renderHtmlElement(day.name, json.day);
+    renderHtmlElement(day.workoutType, json.workoutType);
+    if (hasDistance) {
+        renderHtmlElement(day.distance, ` (${json.distance} ${distanceOrTimeUnit})`);
+    }
     if (hasWorkoutOverviewOrDetails) {
-        day.workoutOverview.textContent = json.workoutOverview;
-        day.workoutDetails.innerHTML = workoutDetailsFormatted;
+        renderHtmlElement(day.workoutOverview, json.workoutOverview);
+        renderHtmlElement(day.workoutDetails, json.workoutDetails);
     } else {
         day.workoutOverviewAndDetails.classList.add("d-none");
     }
-
-    if (hasTip) {
-        day.tipText.textContent = json.tip;
-    } else {
-        day.tip.classList.add("d-none");
-    }
+    // Need to call functions separately here, since we have 2 different HTML elements for tip
+    toggleIfEmpty(day.tip, json.tip);
+    setFormattedText(day.tipText, json.tip);
 
     // Return populated node
     return node;
@@ -241,30 +225,76 @@ function expandCollapse() {
 }
 
 /**
- * Get the first DOM element matching a CSS selector. 
- * Logs a warning if no element is found.
+ * Render HTML element with formatted text. If text is empty, hide the element.
  * 
- * @param {string} selector CSS selector
- * @returns {HTMLElement|null} The matching DOM element, or null if not found
+ * @param {HTMLElement} element HTML element to opulate or hide
+ * @param {string} text Text to insert into the HTML element
  */
-// function $(selector) {
-//     const element = document.querySelector(selector);
-//     if (!element) console.warn(`Missing element: ${selector}`);
-//     return element;
-// }
+function renderHtmlElement(element, text) {
+    toggleIfEmpty(element, text);
+    setFormattedText(element, text);
+}
 
-// /**
-//  * Get all DOM elements matching a CSS selector.
-//  * Logs a warning if no elements are found.
-//  *
-//  * @param {string} selector CSS selector
-//  * @returns {NodeListOf<HTMLElement>} NodeList of matching elements (may be empty)
-//  */
-// function $$(selector) {
-//     const elements = document.querySelectorAll(selector);
-//     if (!elements) console.warn(`Missing element: ${selector}`);
-//     return elements;
-// }
+/**
+ * Format text and populate HTML element with it
+ * 
+ * @param {HTMLElement} element HTML element to populate with the given text
+ * @param {string} text Text to format and populate in the given HTML element
+ */
+function setFormattedText(element, text) {
+    const [formattedText, didFormatText] = formatText(text);
+    const property = didFormatText ? "innerHTML" : "textContent";
+    element[property] = formattedText;
+}
+
+/**
+ * Hide the HTML element if the given text is empty, otherwise make it visible
+ * 
+ * @param {HTMLElement} element HTML element to hide or make visible
+ * @param {string} text Text to check if empty
+ */
+function toggleIfEmpty(element, text) {
+    if (textIsEmpty(text)) {
+        element.classList.add("d-none");
+    } else {
+        element.classList.remove("d-none");
+    }
+}
+
+/**
+ * Format text. Currently, we're just inserting line breaks where indicated.
+ * If text doesn't meet the criteria for formatting, return it unchanged.
+ * 
+ * @param {string} text Text to format
+ * @returns {[string, boolean]} Tuple containing:
+ *   [0] Formatted (or original) text
+ *   [1] Whether formatting was applied
+ */
+function formatText(text) {
+    // Insert line breaks
+    if (text && text.includes("\n")) {
+        const formattedText = text
+            .split("\n")
+            .map(p => p.trim())
+            .filter(Boolean)
+            .map(p => `<div>${p}</div>`)
+            .join("");
+        return [formattedText, true];
+    }
+    // If we make it to this point, that means text doesn't need to be formatted, so just return text
+    return [text, false];
+}
+
+/**
+ * Return true if given text is null or empty, and otherwise false
+ * 
+ * @param {string} text Text to check
+ * @returns {boolean} Whether given text is empty
+ */
+function textIsEmpty(text) {
+    const result = !text || text.trim() == "";
+    return result;
+}
 
 /**
  * Get the first DOM element matching a CSS selector for the given DOM section. 
