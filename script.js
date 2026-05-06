@@ -166,7 +166,7 @@ function renderDay(json) {
     // Constants
     const hasDistance = json.distance && parseFloat(json.distance) > 0;
     const distanceOrTimeUnit = (dom.levelInput.value == "beginner") ? "minutes" : "miles";
-    const hasWorkoutOverviewOrDetails = !textIsEmpty(json.workoutOverview) || !textIsEmpty(json.workoutDetails);
+    const workoutOverviewAndDetailsAreEmpty = textIsEmpty(json.workoutOverview) && textIsEmpty(json.workoutDetails);
 
     // Render HTML
     renderHtmlElement(day.name, json.day);
@@ -174,11 +174,11 @@ function renderDay(json) {
     if (hasDistance) {
         renderHtmlElement(day.distance, ` (${json.distance} ${distanceOrTimeUnit})`);
     }
-    if (hasWorkoutOverviewOrDetails) {
+    if (workoutOverviewAndDetailsAreEmpty) {
+        setVisibility(day.workoutOverviewAndDetails, false);
+    } else {
         renderHtmlElement(day.workoutOverview, json.workoutOverview);
         renderHtmlElement(day.workoutDetails, json.workoutDetails);
-    } else {
-        day.workoutOverviewAndDetails.classList.add("d-none");
     }
     // Need to call functions separately here, since we have 2 different HTML elements for tip
     toggleIfEmpty(day.tip, json.tip);
@@ -255,9 +255,23 @@ function setFormattedText(element, text) {
  */
 function toggleIfEmpty(element, text) {
     if (textIsEmpty(text)) {
-        element.classList.add("d-none");
+        setVisibility(element, false);
     } else {
+        setVisibility(element, true);
+    }
+}
+
+/**
+ * Set visibility of the given HTML element based on the given boolean
+ * 
+ * @param {HTMLElement} element HTML element to hide or make visible
+ * @param {boolean} setToVisible Whether to set element to visible (otherwise hidden)
+ */
+function setVisibility(element, setToVisible = true) {
+    if (setToVisible) {
         element.classList.remove("d-none");
+    } else {
+        element.classList.add("d-none");
     }
 }
 
