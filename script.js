@@ -1,8 +1,16 @@
 import { getISOWeek } from "https://cdn.jsdelivr.net/npm/date-fns@3/+esm";
 
-console.log("my JS script loaded"); // Ensure this JS script is loaded
-
 // Constants
+const JSON_FILE = "training-plan.json";
+const STORAGE_KEY = "trainingPlanState";
+const DEFAULT_STATE = {
+    level: "advanced",
+    startDate: "2026-04-15",
+}
+
+let state;
+let json;
+
 const dom = {
     levelInput: $(document, "#level-input"),
     startDateInput: $(document, "#start-date-input"),
@@ -14,40 +22,35 @@ const dom = {
     dayTemplate: $(document, "#day-template")
 }
 
-// Read from JSON file
-fetch("training-plan.json")
+// Read JSON file and initialize app
+fetch(JSON_FILE)
     .then(response => response.json())
     .then(json => init(json));
 
-// Functions
+//#region Functions
+
 /**
  * Initialize the page
  * 
- * @param {string} json JSON content
+ * @param {string} loadedJson JSON content
  */
-function init(json) {
-    console.log(`JSON length: ${Object.keys(json).length}`); // Ensure JSON file is loaded
+function init(loadedJson) {
+    json = loadedJson;
+    state = loadState(); // State is user input selections saved in local storage
+    
+    render();
+    attachEventListeners();
+}
 
-    // Checks
-    if (!dom.planContainer) {
-        console.error("training-plan-container not found.");
-        return;
-    }
-
-    // Populate input defaults
-    dom.levelInput.value = json.levelDefault;
-    dom.startDateInput.value = json.startDateDefault;
-
-    // Render training plan
-    getCurrentWeekAndRenderPlan(dom.startDateInput.value, dom.levelInput.value, json);
-
-    // Event listeners
+function attachEventListeners() {
     dom.levelInput.addEventListener("change", function () {
         getCurrentWeekAndRenderPlan(dom.startDateInput.value, this.value, json);
+        updateState("level", this.value);
     });
-
+    
     dom.startDateInput.addEventListener("change", function() {
         getCurrentWeekAndRenderPlan(this.value, dom.levelInput.value, json);
+        updateState("startDate", this.value);
     })
 
     dom.expandCollapseButton.addEventListener("click", function() {
@@ -66,18 +69,28 @@ function init(json) {
  * @param {string} startDate Date when training started (for calculating the current week number)
  * @param {string} level Training plan level (beginner, intermediate, advanced)
  */
-function getCurrentWeekAndRenderPlan(startDate, level, json) {
+function getCurrentWeekAndRenderPlan(startDate, level) {
     const weekNum = calculateCurrentWeekNum(startDate);
-    renderPlan(level, weekNum, json);
+    renderPlan(level, weekNum);
 }
 
-/**
+
+//#region Functions - Renderers
+function render() {
+    renderInputs();
+    getCurrentWeekAndRenderPlan(dom.startDateInput.value, dom.levelInput.value);
+}
+
+function renderInputs() {
+    dom.levelInput.value = state.level;
+    dom.startDateInput.value = state.startDate;
+}/**
  * Build the HTML for the training plan for the given level, with the given week expanded
  * 
  * @param {string} level Training plan level (beginner, intermediate, advanced)
  * @param {number} weekNumToExpand Week number to expand
  */
-function renderPlan(level, weekNumToExpand, json) {
+function renderPlan(level, weekNumToExpand) {
     // Clear the container
     dom.planContainer.innerHTML = "";
 
@@ -189,49 +202,6 @@ function renderDay(json) {
 }
 
 /**
- * Given a start date, calculate the current week number (week differential using 1-based indexing)
- * (e.g. if today is in the same week as the start date, return 1. If it's the
- * week after the week of the start date, return 2.)
- * 
- * @param {string} startDate Date when training started
- * @returns Number of weeks into the training plan that we currently are
- */
-function calculateCurrentWeekNum(startDate) {
-    const startWeekNum = getISOWeek(new Date(startDate));
-    const currentWeekNum = getISOWeek(new Date());
-    const weekNumToDisplay = currentWeekNum - startWeekNum + 1; // Use 1-based indexing
-    return weekNumToDisplay;
-}
-
-/**
- * Expand or collapse all weeks, depending on whether any weeks are currently expanded.
- * If any week is currently expanded, collapse all. Otherwise, expand all.
- * (Prefer collapsing all rather than expanding all, since collapsing all is cleaner.)
- */
-function expandCollapse() {
-    const weekNodes = $$(dom.planContainer, "details");
-    const anyWeekIsExpanded = Array.from(weekNodes).some(w => w.open);
-    if (anyWeekIsExpanded) {
-        setWeeksVisiblity(false);
-        dom.expandCollapseButton.textContent = "Expand All";
-    } else {
-        setWeeksVisiblity(true);
-        dom.expandCollapseButton.textContent = "Collapse All";
-    }
-}
-
-/**
- * Expand all week nodes, or collapse them, based on the given boolean
- * 
- * @param {bool} setToVisible Whether to expand all week nodes (otherwise collapse them)
- */
-function setWeeksVisiblity(setToVisible = true) {
-    weekNodes.forEach(w => {
-            w.open = setToVisible;
-        });
-}
-
-/**
  * Render HTML element with formatted text. If text is empty, hide the element.
  * 
  * @param {HTMLElement} element HTML element to opulate or hide
@@ -241,46 +211,9 @@ function renderHtmlElement(element, text) {
     toggleIfEmpty(element, text);
     setFormattedText(element, text);
 }
+//#endregion 
 
-/**
- * Hide the HTML element if the given text is empty, otherwise make it visible
- * 
- * @param {HTMLElement} element HTML element to hide or make visible
- * @param {string} text Text to check if empty
- */
-function toggleIfEmpty(element, text) {
-    if (textIsEmpty(text)) {
-        setVisibility(element, false);
-    } else {
-        setVisibility(element, true);
-    }
-}
-
-/**
- * Return true if given text is null or empty, and otherwise false
- * 
- * @param {string} text Text to check
- * @returns {boolean} Whether given text is empty
- */
-function textIsEmpty(text) {
-    const result = !text || text.trim() == "";
-    return result;
-}
-
-/**
- * Set visibility of the given HTML element based on the given boolean
- * 
- * @param {HTMLElement} element HTML element to hide or make visible
- * @param {boolean} setToVisible Whether to set element to visible (otherwise hidden)
- */
-function setVisibility(element, setToVisible = true) {
-    if (setToVisible) {
-        element.classList.remove("d-none");
-    } else {
-        element.classList.add("d-none");
-    }
-}
-
+//#region Functions - Formatters
 /**
  * Format text and populate HTML element with it
  * 
@@ -316,12 +249,135 @@ function formatText(text) {
     // If we make it to this point, that means text doesn't need to be formatted, so just return text
     return [text, false];
 }
+//#endregion
 
+//#region Functions - Set Visibility
+/**
+ * Expand or collapse all weeks, depending on whether any weeks are currently expanded.
+ * If any week is currently expanded, collapse all. Otherwise, expand all.
+ * (Prefer collapsing all rather than expanding all, since collapsing all is cleaner.)
+ */
+function expandCollapse() {
+    const weekNodes = $$(dom.planContainer, "details");
+    const anyWeekIsExpanded = Array.from(weekNodes).some(w => w.open);
+    if (anyWeekIsExpanded) {
+        expandNodes(weekNodes, false);
+        dom.expandCollapseButton.textContent = "Expand All";
+    } else {
+        expandNodes(weekNodes, true);
+        dom.expandCollapseButton.textContent = "Collapse All";
+    }
+}
+
+/**
+ * Expand the provided nodes, or collapse them, based on the given boolean
+ * 
+ * @param {NodeListOf<HTMLElement>} nodes NodeList to expand or collapse
+ * @param {bool} setToVisible Whether to expand all week nodes (otherwise collapse them)
+ */
+function expandNodes(nodes, setToVisible = true) {
+    nodes.forEach(w => {
+            w.open = setToVisible;
+        });
+}
+
+/**
+ * Hide the HTML element if the given text is empty, otherwise make it visible
+ * 
+ * @param {HTMLElement} element HTML element to hide or make visible
+ * @param {string} text Text to check if empty
+ */
+function toggleIfEmpty(element, text) {
+    if (textIsEmpty(text)) {
+        setVisibility(element, false);
+    } else {
+        setVisibility(element, true);
+    }
+}
+
+/**
+ * Set visibility of the given HTML element based on the given boolean
+ * 
+ * @param {HTMLElement} element HTML element to hide or make visible
+ * @param {boolean} setToVisible Whether to set element to visible (otherwise hidden)
+ */
+function setVisibility(element, setToVisible = true) {
+    if (setToVisible) {
+        element.classList.remove("d-none");
+    } else {
+        element.classList.add("d-none");
+    }
+}
+//#endregion 
+
+//#region Functions - Handle State
+/**
+ * Load app state from local storage, and return it as JSON. If there is no state in local storage,
+ * return the default state.
+ * 
+ * @returns {JSON} JSON representation of the state
+ */
+function loadState() {
+    const rawState = localStorage.getItem(STORAGE_KEY);
+    const jsonState = rawState ? JSON.parse(rawState) : {};
+    const result = { ...DEFAULT_STATE, ...jsonState };
+    return result;
+}
+
+/**
+ * Save the persisted state to local storage
+*/
+function saveState() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+
+/**
+ * Given a key-value pair, update that item in the persisted state.
+ * Mutates the global state and saves it in local storage
+ * 
+ * @param {string} key Key of JSON state element to update
+ * @param {string} value Value to update the state with
+ */
+function updateState(key, value) {
+    state[key] = value;
+    saveState();
+}
+//#endregion 
+
+//#region Functions - Utilities
+/**
+ * Given a start date, calculate the current week number (week differential using 1-based indexing)
+ * (e.g. if today is in the same week as the start date, return 1. If it's the
+ * week after the week of the start date, return 2.)
+ * 
+ * @param {string} startDate Date when training started
+ * @returns Number of weeks into the training plan that we currently are
+ */
+function calculateCurrentWeekNum(startDate) {
+    const startWeekNum = getISOWeek(new Date(startDate));
+    const currentWeekNum = getISOWeek(new Date());
+    const weekNumToDisplay = currentWeekNum - startWeekNum + 1; // Use 1-based indexing
+    return weekNumToDisplay;
+}
+
+/**
+ * Return true if given text is null or empty, and otherwise false
+ * 
+ * @param {string} text Text to check
+ * @returns {boolean} Whether given text is empty
+ */
+function textIsEmpty(text) {
+    const result = !text || text.trim() == "";
+    return result;
+}
+//#endregion 
+
+//#region Functions - DOM Helpers
 /**
  * Get the first DOM element matching a CSS selector for the given DOM section. 
  * Logs a warning if no element is found.
  * 
- * @param {string} section DOM section
+ * @param {Element} section DOM section
  * @param {string} selector CSS selector
  * @returns {HTMLElement|null} The matching DOM element, or null if not found
  */
@@ -335,12 +391,15 @@ function $(section, selector) {
  * Get all DOM elements matching a CSS selector for the given DOM section.
  * Logs a warning if no elements are found.
  *
- * @param {string} section DOM section
+ * @param {Element} section DOM section
  * @param {string} selector CSS selector
  * @returns {NodeListOf<HTMLElement>} NodeList of matching elements (may be empty)
  */
 function $$(section, selector) {
     const elements = section.querySelectorAll(selector);
-    if (!elements) console.warn(`Missing element: ${selector}`);
+    if (elements.length === 0) console.warn(`Missing element: ${selector}`);
     return elements;
 }
+//#endregion 
+
+//#endregion 
