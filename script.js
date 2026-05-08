@@ -88,7 +88,7 @@ function renderPlan(level, weekNumToExpand, json) {
         return;
     }
 
-    // Render HTML
+    // Render HTML elements
     renderHtmlElement(dom.level, level.toUpperCase());
 
     // Render HTML for training plan container
@@ -124,7 +124,7 @@ function renderWeek(json) {
         daysContainer: $(node, ".days"),
     }
 
-    // Render HTML
+    // Render HTML elements
     renderHtmlElement(week.number, json.week.toString());
     renderHtmlElement(week.headnote, json.headnote);
     renderHtmlElement(week.footnote, json.footnote);
@@ -168,7 +168,7 @@ function renderDay(json) {
     const distanceOrTimeUnit = (dom.levelInput.value == "beginner") ? "minutes" : "miles";
     const workoutOverviewAndDetailsAreEmpty = textIsEmpty(json.workoutOverview) && textIsEmpty(json.workoutDetails);
 
-    // Render HTML
+    // Render HTML elements
     renderHtmlElement(day.name, json.day);
     renderHtmlElement(day.workoutType, json.workoutType);
     if (hasDistance) {
@@ -212,16 +212,23 @@ function expandCollapse() {
     const weekNodes = $$(dom.planContainer, "details");
     const anyWeekIsExpanded = Array.from(weekNodes).some(w => w.open);
     if (anyWeekIsExpanded) {
-        weekNodes.forEach(w => {
-            w.open = false;
-        });
+        setWeeksVisiblity(false);
         dom.expandCollapseButton.textContent = "Expand All";
     } else {
-        weekNodes.forEach(w => {
-            w.open = true;
-        });
+        setWeeksVisiblity(true);
         dom.expandCollapseButton.textContent = "Collapse All";
     }
+}
+
+/**
+ * Expand all week nodes, or collapse them, based on the given boolean
+ * 
+ * @param {bool} setToVisible Whether to expand all week nodes (otherwise collapse them)
+ */
+function setWeeksVisiblity(setToVisible = true) {
+    weekNodes.forEach(w => {
+            w.open = setToVisible;
+        });
 }
 
 /**
@@ -233,18 +240,6 @@ function expandCollapse() {
 function renderHtmlElement(element, text) {
     toggleIfEmpty(element, text);
     setFormattedText(element, text);
-}
-
-/**
- * Format text and populate HTML element with it
- * 
- * @param {HTMLElement} element HTML element to populate with the given text
- * @param {string} text Text to format and populate in the given HTML element
- */
-function setFormattedText(element, text) {
-    const [formattedText, didFormatText] = formatText(text);
-    const property = didFormatText ? "innerHTML" : "textContent";
-    element[property] = formattedText;
 }
 
 /**
@@ -262,6 +257,17 @@ function toggleIfEmpty(element, text) {
 }
 
 /**
+ * Return true if given text is null or empty, and otherwise false
+ * 
+ * @param {string} text Text to check
+ * @returns {boolean} Whether given text is empty
+ */
+function textIsEmpty(text) {
+    const result = !text || text.trim() == "";
+    return result;
+}
+
+/**
  * Set visibility of the given HTML element based on the given boolean
  * 
  * @param {HTMLElement} element HTML element to hide or make visible
@@ -273,6 +279,18 @@ function setVisibility(element, setToVisible = true) {
     } else {
         element.classList.add("d-none");
     }
+}
+
+/**
+ * Format text and populate HTML element with it
+ * 
+ * @param {HTMLElement} element HTML element to populate with the given text
+ * @param {string} text Text to format and populate in the given HTML element
+ */
+function setFormattedText(element, text) {
+    const [formattedText, didFormatText] = formatText(text);
+    const property = didFormatText ? "innerHTML" : "textContent";
+    element[property] = formattedText;
 }
 
 /**
@@ -297,17 +315,6 @@ function formatText(text) {
     }
     // If we make it to this point, that means text doesn't need to be formatted, so just return text
     return [text, false];
-}
-
-/**
- * Return true if given text is null or empty, and otherwise false
- * 
- * @param {string} text Text to check
- * @returns {boolean} Whether given text is empty
- */
-function textIsEmpty(text) {
-    const result = !text || text.trim() == "";
-    return result;
 }
 
 /**
