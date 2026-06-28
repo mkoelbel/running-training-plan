@@ -1,5 +1,12 @@
 export type Level = "beginner" | "intermediate" | "advanced"
 
+export function isLevel(value: string): value is Level {
+    const isLevel: boolean = value === "beginner"
+        || value === "intermediate"
+        || value === "advanced";
+    return isLevel;
+}
+
 export type AppState = {
     startDate: string;
     level: Level;
@@ -12,11 +19,10 @@ export type DayJson = {
     workoutOverview: string;
     workoutDetails: string;
     tip: string;
-    tipText: string;
 }
 
 export type WeekJson = {
-    week: string;
+    week: number;
     headnote: string;
     footnote: string;
     days: DayJson[];

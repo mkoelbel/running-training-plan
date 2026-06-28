@@ -1,10 +1,8 @@
-// @ts-check
-
 import { JSON_FILE } from "./constants.js";
 import { dom } from "./dom.js";
-import { getState, updateState } from "./state.js";
-import { AppState, DomRefs, Level, TrainingPlanJson } from "./types.js";
-import { expandCollapse, getCurrentWeekAndRenderPlan, render } from "./utils.js";
+import { getState, subscribe, updateState } from "./state.js";
+import { DomRefs, TrainingPlanJson, isLevel } from "./types.js";
+import { expandCollapse, getCurrentWeekAndRenderPlan, renderInputsAndPlan } from "./utils.js";
 
 // Load data and initialize app
 fetch(JSON_FILE)
@@ -12,25 +10,28 @@ fetch(JSON_FILE)
     .then(json => init(json));
 
 function init(json: TrainingPlanJson): void {
-    const state = getState(); // State is user input selections saved in local storage    
-    render(state, json, dom);
-    attachEventListeners(state, json, dom);
+    // Register a one-time listener so every state update re-renders the plan
+    subscribe(() => {
+        const latestState = getState();
+        getCurrentWeekAndRenderPlan(latestState, json, dom)
+    });
+    const state = getState();
+    renderInputsAndPlan(state, json, dom);
+    attachEventListeners(json, dom);
 }
 
 function attachEventListeners(
-    state: AppState,
     json: TrainingPlanJson,
     dom: DomRefs
 ): void {
     dom.levelInput.addEventListener("change", function () {
-        const level = this.value as Level;
-        updateState("level", level);
-        getCurrentWeekAndRenderPlan(state, json, dom)
+        if(isLevel(this.value)) {
+            updateState("level", this.value);
+        }
     });
     
     dom.startDateInput.addEventListener("change", function() {
         updateState("startDate", this.value);
-        getCurrentWeekAndRenderPlan(state, json, dom)
     })
 
     dom.expandCollapseButton.addEventListener("click", function() {
@@ -38,6 +39,7 @@ function attachEventListeners(
     });
 
     dom.resetButton.addEventListener("click", function() {
+        const state = getState();
         getCurrentWeekAndRenderPlan(state, json, dom)
     });
 }

@@ -1,6 +1,6 @@
 TODO
-- clean up state management
-State Management
+- add comments to all functions
+
 
 JSON for adding a week
         {

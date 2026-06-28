@@ -3,7 +3,7 @@ import { $, $$ } from "./dom.js";
 import { AppState, DayJson, DomRefs, Level, TrainingPlanJson, WeekJson } from "./types.js";
 
 //#region Renderers
-export function render(
+export function renderInputsAndPlan(
     state: AppState,
     json: TrainingPlanJson,
     dom: DomRefs
