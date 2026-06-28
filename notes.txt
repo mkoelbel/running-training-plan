@@ -1,4 +1,6 @@
 TODO
+- clean up state management
+State Management
 
 JSON for adding a week
         {
