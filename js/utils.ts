@@ -3,6 +3,9 @@ import { $, $$ } from "./dom.js";
 import { AppState, DayJson, DomRefs, Level, TrainingPlanJson, WeekJson } from "./types.js";
 
 //#region Renderers
+/**
+ * Update inputs from state and render the training plan
+ */
 export function renderInputsAndPlan(
     state: AppState,
     json: TrainingPlanJson,
@@ -12,6 +15,9 @@ export function renderInputsAndPlan(
     getCurrentWeekAndRenderPlan(state, json, dom);
 }
 
+/**
+ * Update inputs from state values
+ */
 function renderInputs(
     state: AppState,
     dom: DomRefs
@@ -20,6 +26,9 @@ function renderInputs(
     dom.startDateInput.value = state.startDate;
 }
 
+/**
+ * Determine the current week number and render the training plan
+ */
 export function getCurrentWeekAndRenderPlan(
     state: AppState,
     json: TrainingPlanJson,
@@ -29,6 +38,9 @@ export function getCurrentWeekAndRenderPlan(
     renderPlan(state.level, weekNum, json, dom);
 }
 
+/**
+ * Render the training plan for the given level, and expand the week for the given week number
+ */
 function renderPlan(
     level: Level, 
     weekNumToExpand: number, 
@@ -66,6 +78,14 @@ function renderPlan(
     });
 }
 
+/**
+ * Build a week HTML section - clone the week HTML template, populate it with values from the provided JSON,
+ * and build and add the day sections
+ * 
+ * @param json - JSON section for a single week
+ * @param dom 
+ * @returns The completed week HTML
+ */
 function renderWeek(
     json: WeekJson, 
     dom: DomRefs
@@ -98,6 +118,13 @@ function renderWeek(
     return node;
 }
 
+/**
+ * Build a day HTML section - clone the day HTML template and populate it with values from the provided JSON
+ * 
+ * @param json - JSON section for a single day
+ * @param dom 
+ * @returns The complete day HTML
+ */
 function renderDay(
     json: DayJson, 
     dom: DomRefs
@@ -143,6 +170,10 @@ function renderDay(
     return node;
 }
 
+/**
+ * Populate an HTML element with text, apply formatting if the text includes HTML formatting tags,
+ * and hide the element if the text is empty
+ */
 function renderHtmlElement(
     element: HTMLElement, 
     text: string
@@ -153,19 +184,29 @@ function renderHtmlElement(
 //#endregion 
 
 //#region Set Visibility
+/**
+ * If any week in the training plan is currently expanded, collapse all week nodes and set the 
+ * Expand / Collapse button to say "Expand". Otherwise, do the opposite.
+ * (Prefer collapsing all over expanding all to keep things neat and tidy)
+ */
 export function expandCollapse(dom: DomRefs): void {
     const weekNodes = $$(dom.planContainer, "details") as NodeListOf<HTMLDetailsElement>;
     const anyWeekIsExpanded = Array.from(weekNodes).some(w => w.open);
+    var buttonActionText;
     if (anyWeekIsExpanded) {
-        expandNodes(weekNodes, false);
-        dom.expandCollapseButton.textContent = "Expand All";
+        setNodesVisibility(weekNodes, false);
+        buttonActionText = "Expand";
     } else {
-        expandNodes(weekNodes, true);
-        dom.expandCollapseButton.textContent = "Collapse All";
+        setNodesVisibility(weekNodes, true);
+        buttonActionText = "Collapse";
     }
+    dom.expandCollapseButton.textContent = `${buttonActionText} All`;
 }
 
-function expandNodes(
+/**
+ * Close or open all HTML nodes in the provided list based on the provided boolean flag
+ */
+function setNodesVisibility(
     nodes: NodeListOf<HTMLDetailsElement>, 
     setToVisible: boolean = true
 ): void {
@@ -174,6 +215,9 @@ function expandNodes(
     });
 }
 
+/**
+ * If the provided text is empty, hide the provided HTML element. Otherwise, show the element.
+ */
 function toggleIfEmpty(
     element: HTMLElement, 
     text: string
@@ -185,6 +229,9 @@ function toggleIfEmpty(
     }
 }
 
+/**
+ * Show or hide an HTML element based on the provided boolean flag
+ */
 function setVisibility(
     element: HTMLElement, 
     setToVisible = true
@@ -198,6 +245,9 @@ function setVisibility(
 //#endregion
 
 //#region Formatters
+/**
+ * Populate an HTML element with text. If text includes HTML formatting tags, apply the formatting.
+ */
 function setFormattedText(
     element: HTMLElement, 
     text: string
@@ -207,6 +257,13 @@ function setFormattedText(
     element[property] = formattedText;
 }
 
+/**
+ * Convert plain text into HTML-formatted text when the it contains supported formatting syntax.
+ * Otherwise return the plain text.
+ * Supported formatting syntax: line breaks
+ * 
+ * @returns A tuple of (formattedText, didFormat)
+ */
 function formatText(text: string): [string, boolean] {
     // Insert line breaks
     if (text && text.includes("\n")) {
@@ -224,6 +281,14 @@ function formatText(text: string): [string, boolean] {
 //#endregion
 
 //#region Utilities
+/**
+ * Calculate the current training plan week number based on a start date.
+ * For example, if it's currently the same week as the start date, we are in week 1.
+ * If it's 2 weeks after the start date, we are in week 3.
+ * 
+ * @param startDate - Date on which training started
+ * @returns The training plan week we are currently in
+ */
 function calculateCurrentWeekNum(startDate: string): number {
     const startWeekNum = getISOWeek(new Date(startDate));
     const currentWeekNum = getISOWeek(new Date());
@@ -231,6 +296,9 @@ function calculateCurrentWeekNum(startDate: string): number {
     return weekNumToDisplay;
 }
 
+/**
+ * True if the provided text is empty, otherwise false
+ */
 function textIsEmpty(text: string): boolean {
     const result = !text || text.trim() == "";
     return result;
