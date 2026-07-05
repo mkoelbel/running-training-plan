@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2020", "DOM"],
+    "strict": true,
+    "skipLibCheck": true,
+    "rootDir": "./ts",
+    "outDir": "./js",
+    "sourceMap": true
+  },
+  "files": [
+    "ts/constants.ts",
+    "ts/dom.ts",
+    "ts/main.ts",
+    "ts/state.ts",
+    "ts/types.ts",
+    "ts/utils.ts"
+  ]
+}

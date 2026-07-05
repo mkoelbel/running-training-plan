@@ -1,6 +1,6 @@
 import { getISOWeek } from "date-fns";
-import { $, $$ } from "./dom.js";
-import { AppState, DayJson, DomRefs, Level, TrainingPlanJson, WeekJson } from "./types.js";
+import { $, $$ } from "./dom";
+import { AppState, DayJson, DomRefs, Level, TrainingPlanJson, WeekJson } from "./types";
 
 //#region Renderers
 /**
@@ -141,9 +141,8 @@ function renderDay(
         workoutOverview: $(node, ".workout-overview"),
         workoutDetails: $(node, ".workout-details"),
         tip: $(node, ".tip"),
-        tipText: null as HTMLElement | null,
+        tipText: $(node, ".tip-text") as HTMLElement,
     }
-    day.tipText = $(day.tip, ".tip-text");
 
     // Constants
     const hasDistance = json.distance && parseFloat(json.distance) > 0;

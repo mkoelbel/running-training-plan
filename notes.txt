@@ -1,5 +1,5 @@
 TODO
-- add comments to all functions
+- get it running
 
 
 JSON for adding a week

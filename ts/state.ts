@@ -1,5 +1,5 @@
-import { DEFAULT_STATE, STORAGE_KEY } from "./constants.js";
-import { AppState } from "./types.js";
+import { DEFAULT_STATE, STORAGE_KEY } from "./constants";
+import { AppState } from "./types";
 
 let state: AppState = loadState();
 let listeners: Array<() => void> = [];

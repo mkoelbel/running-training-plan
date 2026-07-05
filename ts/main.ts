@@ -1,8 +1,8 @@
-import { JSON_FILE } from "./constants.js";
-import { dom } from "./dom.js";
-import { getState, subscribe, updateState } from "./state.js";
-import { DomRefs, TrainingPlanJson, isLevel } from "./types.js";
-import { expandCollapse, getCurrentWeekAndRenderPlan, renderInputsAndPlan } from "./utils.js";
+import { JSON_FILE } from "./constants";
+import { dom } from "./dom";
+import { getState, subscribe, updateState } from "./state";
+import { DomRefs, TrainingPlanJson, isLevel } from "./types";
+import { expandCollapse, getCurrentWeekAndRenderPlan, renderInputsAndPlan } from "./utils";
 
 // Load data and initialize app
 fetch(JSON_FILE)
