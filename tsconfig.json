@@ -6,16 +6,14 @@
     "lib": ["ES2020", "DOM"],
     "strict": true,
     "skipLibCheck": true,
-    "rootDir": "./ts",
-    "outDir": "./js",
     "sourceMap": true
   },
   "files": [
-    "ts/constants.ts",
-    "ts/dom.ts",
-    "ts/main.ts",
-    "ts/state.ts",
-    "ts/types.ts",
-    "ts/utils.ts"
+    "src/constants.ts",
+    "src/dom.ts",
+    "src/main.ts",
+    "src/state.ts",
+    "src/types.ts",
+    "src/utils.ts"
   ]
 }

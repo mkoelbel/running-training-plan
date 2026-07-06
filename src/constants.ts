@@ -7,4 +7,4 @@ export const DEFAULT_STATE: AppState = {
     level: "advanced",
 }
 
-export const JSON_FILE = "training-plan.json";
+export const JSON_FILE = "running-training-plan.json";
