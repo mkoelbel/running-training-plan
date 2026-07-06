@@ -1,6 +1,4 @@
 TODO
-- get it running
-
 
 JSON for adding a week
         {

@@ -1,12 +1,27 @@
 # Running Training Plan app
-*Provides a daily training plan to prepare for a 10-mile race*
+*A web app that provides a daily training plan to prepare for a 10-mile race*
 
-- Training plan is 10 weeks long
-- Provides beginner, intermediate, and advanced training plans
-- Training plan is from the 2025 Cherry Blossom 10-Miler coaches
+### Features
+- 10-week training plan
+- Beginner, intermediate, and advanced difficulty levels
+- Based on the 2025 Cherry Blossom 10-Mile coaches' training plans
 
-### Installation and Usage
-- Install date-fns library (run "npm install date-fns" in terminal)
-- Install vite (run "npm install --save-dev vite" in terminal)
-- To run app in browser, run "npm run dev" in terminal
-- Before pushing to Github, run "npm run build" in terminal
+### Installation
+Clone the repo, then install the project dependencies:
+
+```
+npm install
+```
+
+### Running the app locally
+Start the vite development server
+```
+npm run dev
+```
+Then open the local URL shown in the terminal (typically `http://localhost:5173/`)
+
+### Deploying
+To deploy the app to GitHub Pages:
+```
+npm run deploy
+```
